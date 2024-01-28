@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import { useState } from 'react';
 
 const CardGaleri = (props) => {
 
@@ -21,15 +20,11 @@ const CardGaleri = (props) => {
 
     // logika zoom
     
-    const [fullscreen, setFullscreen] = useState(false);
+    const handleZoom = () => {
+    // Membuka gambar dalam jendela baru
+    window.open(props.gambar, 'Gambar Full', 'width=1000, height=800');
+};
 
-  const handleZoom = () => {
-    setFullscreen(true);
-  };
-
-  const closeFullscreen = () => {
-    setFullscreen(false);
-  }
 
     return (
         <div
@@ -52,13 +47,6 @@ const CardGaleri = (props) => {
                     className="icon-perbesar"
                     onClick={handleZoom}
                 />
-
-                // tampilan full screen 
-                   {fullscreen && (
-        <div className="fullscreen-overlay" onClick={closeFullscreen}>
-          <img src={props.gambar} alt="Gambar" />
-        </div>
-      )}
                 
                 <img
                     src="/unduh.svg"
