@@ -12,6 +12,7 @@ const CardAnggota = (props) => {
 
             <div className="div-block-8">
                 <div className="text-block-6">{props.nama}</div>
+                <div className="posisinya">{props.posisi}</div>
                 <div className="div-block-7">
 
                     <a href={props.fb} target="_blank" rel="noopener noreferrer">
@@ -21,7 +22,7 @@ const CardAnggota = (props) => {
                             width="30"
                             height="30"
                             alt=""
-                            className="image-3" />
+                        />
                     </a>
                     <a href={props.ig} target="_blank" rel="noopener noreferrer">
                         <img
@@ -29,7 +30,7 @@ const CardAnggota = (props) => {
                             loading="lazy"
                             width="30"
                             height="30"
-                            alt="" className="image-3" />
+                            alt="" />
                     </a>
                     <a href={props.yt} target="_blank" rel="noopener noreferrer">
                         <img
@@ -38,7 +39,7 @@ const CardAnggota = (props) => {
                             width="30"
                             height="30"
                             alt=""
-                            className="image-3" />
+                        />
                     </a>
 
                 </div>
@@ -50,6 +51,7 @@ const CardAnggota = (props) => {
 CardAnggota.propTypes = {
     gambar: PropTypes.string.isRequired,
     nama: PropTypes.string.isRequired,
+    posisi: PropTypes.string.isRequired,
     ig: PropTypes.string.isRequired,
     yt: PropTypes.string.isRequired,
     fb: PropTypes.string.isRequired,

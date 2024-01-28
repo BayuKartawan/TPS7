@@ -1,11 +1,12 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 const NavHp = () => {
     return (
         <section className="nav-mobile">
-            <Link
+            <NavLink
                 to="/"
                 href="#"
+                activeClassName="active"
                 className="link-block-3 w-inline-block">
                 <img
                     src="/nav/home.svg"
@@ -15,10 +16,11 @@ const NavHp = () => {
                     alt=""
                     className="icon-nav"
                 />
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
                 to="/galeri"
                 href="#"
+                activeClassName="active"
                 className="link-block-3 w-inline-block">
                 <img
                     src="/nav/galeri.svg"
@@ -27,10 +29,11 @@ const NavHp = () => {
                     height="72"
                     alt=""
                     className="icon-nav" />
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
                 to="/anggota"
                 href="#"
+                activeClassName="active"
                 className="link-block-3 w-inline-block">
                 <img
                     src="/nav/anggota.svg"
@@ -39,10 +42,11 @@ const NavHp = () => {
                     height="72"
                     alt=""
                     className="icon-nav" />
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
                 to="/dokumen"
                 href="#"
+                activeClassName="active"
                 className="link-block-3 w-inline-block">
                 <img
                     src="/nav/file.svg"
@@ -51,7 +55,7 @@ const NavHp = () => {
                     height="72"
                     alt=""
                     className="icon-nav" />
-            </Link>
+            </NavLink>
 
         </section>
     )

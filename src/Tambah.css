@@ -4,10 +4,6 @@ html {
     font-family: sans-serif;
 }
 
-body {
-    margin: 0;
-}
-
 article,
 aside,
 details,
@@ -269,11 +265,12 @@ html {
 body {
     min-height: 100%;
     color: #333;
-    background-color: #fff;
+    background-color: #f6f6f6;
     margin: 0;
     font-family: Arial, sans-serif;
     font-size: 14px;
     line-height: 20px;
+    margin: 0;
 }
 
 img {
@@ -293,6 +290,7 @@ html.w-mod-touch * {
 .w-inline-block {
     max-width: 100%;
     display: inline-block;
+    text-decoration: none;
 }
 
 .w-clearfix:before,
@@ -2310,7 +2308,7 @@ textarea.w-select {
 
 .hitung {
     z-index: 30;
-    height: 100px;
+    height: 200px;
     background-color: #fff;
     border-radius: 7px;
     flex-direction: column;
@@ -2340,6 +2338,7 @@ textarea.w-select {
     font-family: Montserrat, sans-serif;
     font-size: 24px;
     font-weight: 900;
+    text-align: center;
 }
 
 .column-2 {
@@ -2367,9 +2366,10 @@ textarea.w-select {
     text-align: center;
     justify-content: center;
     font-family: Montserrat, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     display: flex;
+    margin-bottom: 10px;
 }
 
 .musik {
@@ -2420,14 +2420,23 @@ textarea.w-select {
     justify-content: center;
     align-items: center;
     display: flex;
+    margin-bottom: 20px;
 }
 
 .text-block-6 {
     text-align: center;
-    margin-bottom: 10px;
+    margin-top: 10px;
     font-family: Montserrat, sans-serif;
     font-size: 20px;
     font-weight: 700;
+}
+
+.posisinya {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .div-block-8 {
@@ -2446,6 +2455,7 @@ textarea.w-select {
 }
 
 .item-galeri {
+    padding-left: 10px;
     width: 300px;
     height: 50px;
     grid-column-gap: 10px;
@@ -2453,7 +2463,7 @@ textarea.w-select {
     background-color: #cfe8a9;
     border-radius: 10px;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     display: flex;
 }
@@ -2483,6 +2493,8 @@ textarea.w-select {
     justify-content: center;
     align-items: stretch;
     display: flex;
+    background-color: white;
+    border: 1px solid red;
 }
 
 .div-block-10 {
@@ -2535,9 +2547,14 @@ textarea.w-select {
         padding-bottom: 10px;
     }
 
+    .active {
+        filter: invert();
+        background-color: #3defef;
+    }
+
     .link-block-3:hover {
         filter: invert();
-        background-color: #fff;
+        background-color: #3defef;
     }
 
     .h-mobile {
@@ -2554,6 +2571,9 @@ textarea.w-select {
         padding-bottom: 0;
         padding-right: 0;
         display: flex;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0px;
     }
 
     .div-block {
@@ -2567,7 +2587,7 @@ textarea.w-select {
     .text-block-2 {
         color: #fff;
         font-family: Montserrat, sans-serif;
-        font-weight: 500;
+        font-weight: 600;
     }
 
     .icon-nav {
@@ -2618,12 +2638,12 @@ textarea.w-select {
 
     .text-block-6 {
         font-size: 18px;
-        font-weight: 500;
+        font-weight: 600;
     }
 
-    .image-3 {
-        width: 20px;
-        height: 20px;
+    .posisinya {
+        font-size: 15px;
+        font-weight: 400;
     }
 
     .grid-galeri-list {
@@ -2661,6 +2681,7 @@ textarea.w-select {
 
     .text-block-3 {
         font-size: 20px;
+        text-align: center;
     }
 
     .text-block-4 {
@@ -2669,7 +2690,8 @@ textarea.w-select {
 
     .text-block-5 {
         text-align: center;
-        font-size: 14px;
+        font-size: 18px;
+        margin-bottom: 20px;
     }
 
     .div-block-5 {
@@ -2687,7 +2709,13 @@ textarea.w-select {
     }
 
     .text-block-6 {
-        font-size: 15px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .posisinya {
+        font-size: 14px;
+        font-weight: 500;
     }
 
 

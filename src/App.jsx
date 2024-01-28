@@ -8,7 +8,7 @@ import Anggota from "./pages/Anggota";
 import Dokument from "./pages/Dokument"
 import Galeri from "./pages/Galeri"
 import IsiGaleri from "./pages/IsiGaleri"
-import UnduhDok from "./pages/pdf/FileDownloader"
+import Bimtek1 from "./pages/Bimtek1"
 import './Tambah.css'
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
           <Route path="/anggota" element={<Anggota />} />
           <Route path="/dokumen" element={<Dokument />} />
           <Route path="/galeri/isi" element={<IsiGaleri />} />
-          <Route path="/dokumen/tes" element={<UnduhDok />} />
+          <Route path="/dokumen/bimtek1" element={<Bimtek1 />} />
         </Routes>
       </div>
     </Router>

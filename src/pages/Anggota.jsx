@@ -14,6 +14,7 @@ const Anggota = () => {
                         ig="https://www.instagram.com/blim.bink/"
                         fb="https://www.facebook.com/tuanpapuk.tuanpapuk"
                         yt="https://www.youtube.com/@tipahgabe8878"
+                        posisi="(KPPS 5)"
                     />
 
                     <CardAnggota
@@ -22,6 +23,7 @@ const Anggota = () => {
                         ig="https://www.instagram.com/blim.bink/"
                         fb=""
                         yt=""
+                        posisi="(KPPS 1)"
                     />
 
                     <CardAnggota
@@ -30,6 +32,7 @@ const Anggota = () => {
                         ig="https://www.instagram.com/blim.bink/"
                         fb=""
                         yt=""
+                        posisi="(KPPS 4)"
                     />
 
                     <CardAnggota
@@ -38,6 +41,7 @@ const Anggota = () => {
                         ig="https://www.instagram.com/blim.bink/"
                         fb=""
                         yt=""
+                        posisi="(KPPS 6)"
                     />
 
                     <CardAnggota
@@ -46,6 +50,7 @@ const Anggota = () => {
                         ig="https://www.instagram.com/blim.bink/"
                         fb=""
                         yt=""
+                        posisi="(KPPS 3)"
                     />
 
                     <CardAnggota
@@ -54,6 +59,7 @@ const Anggota = () => {
                         ig="https://www.instagram.com/blim.bink/"
                         fb=""
                         yt=""
+                        posisi="(KPPS 2)"
                     />
 
                     <CardAnggota
@@ -62,6 +68,7 @@ const Anggota = () => {
                         ig="https://www.instagram.com/blim.bink/"
                         fb=""
                         yt=""
+                        posisi="(KPPS 7)"
                     />
 
                 </div>
