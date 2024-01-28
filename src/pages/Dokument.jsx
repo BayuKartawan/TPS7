@@ -13,12 +13,12 @@ const Anggota = () => {
                     <FileDownloader
                         filePath="/assets/dok/tes.pdf"
                         fileName="yuyu.pdf"
-                        buttonText="ohayo"
+                        buttonText="pedoman"
                     />
-                    <Tombol
-                        gambar="/assets/kpu.png"
-                        nama="File SK"
-                    // tStyle={{ borderColor: 'red' }}
+                    <FileDownloader
+                        filePath="/assets/dok/SK-KPPS-SIKU- BARAT.pdf"
+                        fileName="SK KPPS Sikur Barat 2024.pdf"
+                        buttonText="SK KPPS Sikur Barat 2024"
                     />
 
                     <Tombol
