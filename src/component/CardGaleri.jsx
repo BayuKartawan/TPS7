@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { useState } from 'react';
 
 const CardGaleri = (props) => {
 
@@ -18,15 +19,17 @@ const CardGaleri = (props) => {
         }
     }
 
-    const handleZoom = () => {
-        // Logika pengunduhan gambar
-        const link = document.createElement('a');
-        link.href = props.gambar;
-        link.download = 'dokumen-kpps7-penyenggir.jpg'; // Ganti 'nama_file_gambar.jpg' sesuai dengan nama file yang diinginkan
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    }
+    // logika zoom
+    
+    const [fullscreen, setFullscreen] = useState(false);
+
+  const handleZoom = () => {
+    setFullscreen(true);
+  };
+
+  const closeFullscreen = () => {
+    setFullscreen(false);
+  }
 
     return (
         <div
@@ -49,6 +52,18 @@ const CardGaleri = (props) => {
                     className="icon-perbesar"
                     onClick={handleZoom}
                 />
+
+                // tampilan full screen 
+                   const [fullscreen, setFullscreen] = useState(false);
+
+  const handleZoom = () => {
+    setFullscreen(true);
+  };
+
+  const closeFullscreen = () => {
+    setFullscreen(false);
+  };
+                
                 <img
                     src="/unduh.svg"
                     loading="lazy"
