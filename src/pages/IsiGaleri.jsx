@@ -9,27 +9,67 @@ const IsiGaleri = () => {
                 <div className="w-layout-grid">
 
                     <CardGaleri
-                        gambar="https://assets-global.website-files.com/65b3ea448c2bd342c4b99cf7/65b3edbe0c1c567dcb83a5c2_IMG-20240126-WA0017.jpg"
+                        gambar="/pelantikan/pelantikan1.jpg"
                     />
 
                     <CardGaleri
-                        gambar="https://assets-global.website-files.com/65b3ea448c2bd342c4b99cf7/65b3edbe0c1c567dcb83a5c2_IMG-20240126-WA0017.jpg"
+                        gambar="/pelantikan/pelantikan2.jpg"
                     />
 
                     <CardGaleri
-                        gambar="https://assets-global.website-files.com/65b3ea448c2bd342c4b99cf7/65b3edbe0c1c567dcb83a5c2_IMG-20240126-WA0017.jpg"
+                        gambar="/pelantikan/pelantikan3.jpg"
                     />
 
                     <CardGaleri
-                        gambar="https://assets-global.website-files.com/65b3ea448c2bd342c4b99cf7/65b3edbe0c1c567dcb83a5c2_IMG-20240126-WA0017.jpg"
+                        gambar="/pelantikan/pelantikan4.jpg"
                     />
 
                     <CardGaleri
-                        gambar="https://assets-global.website-files.com/65b3ea448c2bd342c4b99cf7/65b3edbe0c1c567dcb83a5c2_IMG-20240126-WA0017.jpg"
+                        gambar="/pelantikan/pelantikan5.jpg"
                     />
 
                     <CardGaleri
-                        gambar="https://assets-global.website-files.com/65b3ea448c2bd342c4b99cf7/65b3edbe0c1c567dcb83a5c2_IMG-20240126-WA0017.jpg"
+                        gambar="/pelantikan/pelantikan6.jpg"
+                    />
+
+                    <CardGaleri
+                        gambar="/pelantikan/pelantikan7.jpg"
+                    />
+
+                    <CardGaleri
+                        gambar="/pelantikan/pelantikan8.jpg"
+                    />
+                    
+                    <CardGaleri
+                        gambar="/pelantikan/pelantikan9.jpg"
+                    />
+
+                    <CardGaleri
+                        gambar="/pelantikan/pelantikan10.jpg"
+                    />
+
+                    <CardGaleri
+                        gambar="/pelantikan/pelantikan11.jpg"
+                    />
+
+                    <CardGaleri
+                        gambar="/pelantikan/pelantikan12.jpg"
+                    />
+
+                    <CardGaleri
+                        gambar="/pelantikan/pelantikan13.jpg"
+                    />
+
+                    <CardGaleri
+                        gambar="/pelantikan/pelantikan14.jpg"
+                    />
+
+                    <CardGaleri
+                        gambar="/pelantikan/pelantikan15.jpg"
+                    />
+
+                    <CardGaleri
+                        gambar="/pelantikan/pelantikan16.jpg"
                     />
 
                 </div>
