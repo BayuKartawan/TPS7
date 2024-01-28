@@ -54,15 +54,11 @@ const CardGaleri = (props) => {
                 />
 
                 // tampilan full screen 
-                   const [fullscreen, setFullscreen] = useState(false);
-
-  const handleZoom = () => {
-    setFullscreen(true);
-  };
-
-  const closeFullscreen = () => {
-    setFullscreen(false);
-  };
+                   {fullscreen && (
+        <div className="fullscreen-overlay" onClick={closeFullscreen}>
+          <img src={props.gambar} alt="Gambar" />
+        </div>
+      )}
                 
                 <img
                     src="/unduh.svg"
