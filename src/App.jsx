@@ -1,18 +1,34 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import NavLarge from "./component/NavLarge";
+import NavHp from "./component/NavHp"
+import JudulHp from "./component/JudulHp"
+import MusicPlayer from "./component/MusicPlayer"
 import Home from './pages/Home'
-import './App.css'
+import Anggota from "./pages/Anggota";
+import Dokument from "./pages/Dokument"
+import Galeri from "./pages/Galeri"
+import IsiGaleri from "./pages/IsiGaleri"
+import UnduhDok from "./pages/pdf/FileDownloader"
 import './Tambah.css'
 
 function App() {
   return (
-    <div>
-      <Router>
+    <Router>
+      <div>
+        <NavLarge />
+        <NavHp />
+        <JudulHp />
+        <MusicPlayer source="/assets/kpu.mp3" />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/galeri" element={<Galeri />} />
+          <Route path="/anggota" element={<Anggota />} />
+          <Route path="/dokumen" element={<Dokument />} />
+          <Route path="/galeri/isi" element={<IsiGaleri />} />
+          <Route path="/dokumen/tes" element={<UnduhDok />} />
         </Routes>
-      </Router>
-
-    </div>
+      </div>
+    </Router>
   )
 }
 

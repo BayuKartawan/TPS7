@@ -44,7 +44,7 @@ const Countdown = ({ targetDate }) => {
     return (
         <div className="w-layout-blockcontainer hitung w-container">
             <div className="div-block-5">
-                <div className="text-block-5">Hitung Mundur Menuju<br />14 Februari 2024</div>
+                <div className="text-block-5">⏱️Hitung Mundur Menuju<br />📌14 Februari 2024📌</div>
             </div>
             <div className="columns w-row">
                 <div className="column w-col w-col-3">
