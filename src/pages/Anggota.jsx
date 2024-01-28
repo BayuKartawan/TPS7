@@ -36,7 +36,7 @@ const Anggota = () => {
                     />
 
                     <CardAnggota
-                        gambar="https://assets-global.website-files.com/65b3ea448c2bd342c4b99cf7/65b3edbe0c1c567dcb83a5c2_IMG-20240126-WA0017.jpg"
+                        gambar="/profil/pIjuk.jpg"
                         nama="✨Indra Setiawan✨"
                         ig="https://www.instagram.com/blim.bink/"
                         fb=""
