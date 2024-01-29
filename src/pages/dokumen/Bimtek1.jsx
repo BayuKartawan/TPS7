@@ -1,7 +1,7 @@
-import FileDownloader from "./pdf/FileDownloader"
+import FileDownloader from "../pdf/FileDownloader"
 import Safe from 'react-safe'
 
-const Anggota = () => {
+const Bimtek1 = () => {
     return (
         <div>
             <br />
@@ -10,28 +10,23 @@ const Anggota = () => {
                 <div className="w-layout-grid grid-galeri-list">
 
                     <FileDownloader
-                        filePath="/assets/dok/tes.pdf"
-                        fileName="yuyu.pdf"
-                        buttonText="ohayo"
+                        filePath="\assets\dok\modul-pelatihan-kpps.pdf"
+                        fileName="Modul pelatihan KPPS.pdf"
+                        buttonText="Modul pelatihan KPPS"
                     />
 
                     <FileDownloader
-                        filePath="/assets/dok/tes.pdf"
-                        fileName="yuyu.pdf"
-                        buttonText="ohayo"
+                        filePath="\assets\dok\PEMUNGUTAN-DAN-PENGHITUNGAN-SUARA.pdf"
+                        fileName="PEMUNGUTAN-DAN-PENGHITUNGAN-SUARA.pdf"
+                        buttonText="Pemungutan Dan Penghitungan Suara"
                     />
 
                     <FileDownloader
-                        filePath="/assets/dok/tes.pdf"
-                        fileName="yuyu.pdf"
-                        buttonText="ohayo"
+                        filePath="\assets\dok\SUBSTANSI-PENGATURAN-PEDOMAN-TEKNIS-PEMUNGUTAN-DAN-PENGHITUNGAN-SUARA.pdf"
+                        fileName=""
+                        buttonText="Substansi Pengaturan Pedoman Teknis Pemungutan Dan Penghitungan Suara"
                     />
 
-                    <FileDownloader
-                        filePath="/assets/dok/tes.pdf"
-                        fileName="yuyu.pdf"
-                        buttonText="ohayo"
-                    />
 
                 </div>
             </section>
@@ -40,7 +35,7 @@ const Anggota = () => {
             <br />
 
             {/* FORM KOMENTAR */}
-            <div id="disqus_thread" style={{ borderRadius: "7px", border: "1px solid #8ADAB2", padding: "10px" }} />
+            <div id="disqus_thread" style={{ borderRadius: "7px", border: "1px solid #8ADAB2", padding: "10px", maxWidth: "900px", marginLeft: "auto", marginRight: "auto" }} />
             <Safe.script>
                 {
                     (function () { // DON'T EDIT BELOW THIS LINE
@@ -59,4 +54,4 @@ const Anggota = () => {
     )
 }
 
-export default Anggota
+export default Bimtek1

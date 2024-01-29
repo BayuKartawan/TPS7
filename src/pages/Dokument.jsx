@@ -11,9 +11,9 @@ const Anggota = () => {
                 <div className="w-layout-grid grid-galeri-list">
 
                     <FileDownloader
-                        filePath="/assets/dok/tes.pdf"
-                        fileName="yuyu.pdf"
-                        buttonText="pedoman"
+                        filePath="\assets\dok\PEDOMAN-TEKNIS-PELAKSANAAN-PEMUNGUTAN-DAN-PENGHITUNGAN-SUARA.pdf"
+                        fileName=""
+                        buttonText="Pedoman Teknis Pelaksanaan Pemungutan dan Penghitungan Suara"
                     />
                     <FileDownloader
                         filePath="/assets/dok/SK-KPPS-SIKU- BARAT.pdf"
@@ -29,12 +29,20 @@ const Anggota = () => {
 
                     <Tombol
                         gambar="/assets/kpu.png"
+                        nama="File Bimtek 2"
+                        link="/dokumen/bimtek2"
+                    />
+
+                    <Tombol
+                        gambar="/assets/kpu.png"
                         nama="Berkas Hari H"
+                        link="/dokumen/berkas-hari-h"
                     />
 
                     <Tombol
                         gambar="/assets/kpu.png"
                         nama="Berkas Pendukung"
+                        link="/dokumen/berkas-pendukung"
                     />
 
                 </div>
@@ -44,7 +52,7 @@ const Anggota = () => {
             <br />
 
             {/* FORM KOMENTAR */}
-            <div id="disqus_thread" style={{ borderRadius: "7px", border: "1px solid #8ADAB2", padding: "10px" }} />
+            <div id="disqus_thread" style={{ borderRadius: "7px", border: "1px solid #8ADAB2", padding: "10px", maxWidth: "900px", marginLeft: "auto", marginRight: "auto" }} />
             <Safe.script>
                 {
                     (function () { // DON'T EDIT BELOW THIS LINE

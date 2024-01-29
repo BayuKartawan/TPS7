@@ -1,4 +1,4 @@
-import CardGaleri from "../component/CardGaleri"
+import CardGaleri from "../../component/CardGaleri"
 
 const IsiGaleri = () => {
     return (
@@ -39,7 +39,7 @@ const IsiGaleri = () => {
                     <CardGaleri
                         gambar="/pelantikan/pelantikan8.jpg"
                     />
-                    
+
                     <CardGaleri
                         gambar="/pelantikan/pelantikan9.jpg"
                     />
