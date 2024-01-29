@@ -1,17 +1,12 @@
-.comp-vidio {
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .div-block-11 {
     margin-top: 5px;
 }
 
 .judul-yt {
     margin-top: 5px;
-    font-family: Montserrat, sans-serif;
+    font-family: Montserrat;
     font-weight: 500;
+    overflow-wrap: anywhere;
 }
 
 .w-embed-youtubevideo {
@@ -35,12 +30,6 @@
     grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
-@media screen and (max-width: 767px) {
-
-    .grid-2 {
-        grid-template-columns: 1fr;
-    }
-}
 
 @media screen and (max-width: 479px) {
 

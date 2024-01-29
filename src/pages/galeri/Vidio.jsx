@@ -1,25 +1,41 @@
 import CardYt from "../../component/CardYt"
+import Safe from 'react-safe'
 import "./Vidio.css"
 
 const Vidio = () => {
     return (
-        <section className="comp-vidio">
-            <div className="w-layout-grid grid-2" >
+        <div>
+            <br />
+            <br />
+            <section className="container-card">
+                <div className="w-layout-grid grid">
 
-                <CardYt
-                    idVidio="NS4XLioucLo"
-                    title="Arsip Keluarga Besar Sari || Penyenggir, Sikur 2007"
-                    deskripsi="sasasassasasasasassasasasasassasasasasassasasasasassasasasasassasasasasassasasasasassasasasasassasasasasassasasasasassasa"
-                />
+                    <CardYt
+                        idVidio="NS4XLioucLo"
+                        title="Arsip Keluarga Besar Sari || Penyenggir, Sikur 2007"
+                        deskripsi="Arsip Keluarga Besar Sari || Penyenggir, Sikur 2007"
+                    />
 
-                <CardYt
-                    idVidio="NS4XLioucLo"
-                    title="Arsip Keluarga Besar Sari || Penyenggir, Sikur 2007"
-                    deskripsi="sasasassasasasasassasasasasassasasasasassasasasasassasasasasassasasasasassasasasasassasasasasassasasasasassasasasasassasa"
-                />
+                </div>
+            </section>
 
-            </div>
-        </section>
+            {/* FORM KOMENTAR */}
+            <div id="disqus_thread" style={{ borderRadius: "7px", border: "1px solid #8ADAB2", padding: "10px", maxWidth: "900px", marginLeft: "auto", marginRight: "auto" }} />
+            <Safe.script>
+                {
+                    (function () { // DON'T EDIT BELOW THIS LINE
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://tps7.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })()
+                }
+            </Safe.script>
+
+            <br />
+            <br />
+            <br />
+        </div>
     )
 }
 

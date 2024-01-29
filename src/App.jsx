@@ -52,7 +52,7 @@ function App() {
           <Route path="/dokumen/berkas-pendukung" element={<BerkasP />} />
           <Route path="/dokumen/bimtek2" element={<Bimtek2 />} />
           {/* VIDIO */}
-          <Route path="/galeri/vidio1" element={<Vidio />} />
+          <Route path="/galeri/vidio" element={<Vidio />} />
           {/* halaman tidak di temukan */}
           <Route path="/*" element={<NotFound />} />
         </Routes>

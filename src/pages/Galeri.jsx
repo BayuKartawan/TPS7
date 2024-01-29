@@ -40,6 +40,12 @@ const Anggota = () => {
                         link="/galeri/random"
                     />
 
+                    <Tombol
+                        gambar="/assets/kpu.png"
+                        nama="Kumpulan vidio"
+                        link="/galeri/vidio"
+                    />
+
 
 
                 </div>

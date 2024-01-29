@@ -1,4 +1,4 @@
-import "../pages/galeri/Vidio.css"
+
 
 const CardYt = (Des) => {
     return (
@@ -17,7 +17,7 @@ const CardYt = (Des) => {
                     title={Des.title}
                 />
             </div>
-            <div className="judul-yt">{Des.deskripsi}</div>
+            <div className="judul-yt" style={{ marginLeft: "5px", marginRight: "5px" }}>{Des.deskripsi}</div>
         </div>
 
     )
