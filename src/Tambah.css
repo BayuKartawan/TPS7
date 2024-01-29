@@ -2575,6 +2575,7 @@ textarea.w-select {
         position: -webkit-sticky;
         position: sticky;
         top: 0px;
+        z-index: 100;
     }
 
     .div-block {
