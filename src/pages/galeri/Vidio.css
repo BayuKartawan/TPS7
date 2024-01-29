@@ -1,0 +1,50 @@
+.comp-vidio {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.div-block-11 {
+    margin-top: 5px;
+}
+
+.judul-yt {
+    margin-top: 5px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+}
+
+.w-embed-youtubevideo {
+    width: 100%;
+    background-image: url("https://d3e54v103j8qbb.cloudfront.net/static/youtube-placeholder.2b05e7d68d.svg");
+    background-position: 50%;
+    background-size: cover;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+}
+
+.w-embed-youtubevideo:empty {
+    min-height: 75px;
+    padding-bottom: 56.25%;
+}
+
+#w-node-c9a548d2-1449-da8f-b2fd-762ada99759e-c4b99cfa,
+#w-node-_85b77a4a-a448-0399-b174-12105e6b3f54-c4b99cfa {
+    grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+@media screen and (max-width: 767px) {
+
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 479px) {
+
+    #w-node-c9a548d2-1449-da8f-b2fd-762ada99759e-c4b99cfa {
+        grid-area: span 1 / span 1 / span 1 / span 1;
+    }
+}
