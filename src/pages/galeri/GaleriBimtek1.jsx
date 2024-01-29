@@ -20,6 +20,14 @@ const GaleriBimtek1 = () => {
                         gambar="\bimtek1\bt1-3.jpg"
                     />
 
+                    <CardGaleri
+                        gambar="\bimtek1\bt1-4.jpg"
+                    />
+
+                    <CardGaleri
+                        gambar="\bimtek1\bt1-5.jpg"
+                    />
+
                 </div>
             </section>
             <br />

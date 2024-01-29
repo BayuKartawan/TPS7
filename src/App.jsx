@@ -10,6 +10,10 @@ import Dokument from "./pages/Dokument"
 import Galeri from "./pages/Galeri"
 // isi galeri
 import IsiGaleri from "./pages/galeri/IsiGaleri"
+import GaleriBimtek1 from "./pages/galeri/GaleriBimtek1"
+import GaleriBimtek2 from "./pages/galeri/GaleriBimtek2"
+import GaleriHariH from "./pages/galeri/GaleriHariH"
+import Random from "./pages/galeri/Random"
 // isi dokumen
 import Bimtek1 from "./pages/dokumen/Bimtek1"
 import BerkasHariH from "./pages/dokumen/BerkasHariH";
@@ -35,7 +39,11 @@ function App() {
           <Route path="/anggota" element={<Anggota />} />
           <Route path="/dokumen" element={<Dokument />} />
           {/* galeri */}
-          <Route path="/galeri/isi" element={<IsiGaleri />} />
+          <Route path="/galeri/pelantikan" element={<IsiGaleri />} />
+          <Route path="/galeri/hari-h" element={<GaleriHariH />} />
+          <Route path="/galeri/bimtek1" element={<GaleriBimtek1 />} />
+          <Route path="/galeri/bimtek2" element={<GaleriBimtek2 />} />
+          <Route path="/galeri/random" element={<Random />} />
           {/* dokumen */}
           <Route path="/dokumen/bimtek1" element={<Bimtek1 />} />
           <Route path="/dokumen/berkas-hari-h" element={<BerkasHariH />} />

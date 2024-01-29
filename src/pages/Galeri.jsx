@@ -12,24 +12,35 @@ const Anggota = () => {
                     <Tombol
                         gambar="/assets/kpu.png"
                         nama="Pelantikan"
-                        link="/galeri/isi"
+                        link="/galeri/pelantikan"
                     // tStyle={{ borderColor: 'red' }}
                     />
 
                     <Tombol
                         gambar="/assets/kpu.png"
                         nama="Bimtek 1"
+                        link="/galeri/bimtek1"
+                    />
+
+                    <Tombol
+                        gambar="/assets/kpu.png"
+                        nama="Bimtek 2"
+                        link="/galeri/bimtek2"
+                    />
+
+                    <Tombol
+                        gambar="/assets/kpu.png"
+                        nama="Hari H"
+                        link="/galeri/hari-h"
                     />
 
                     <Tombol
                         gambar="/assets/kpu.png"
                         nama="Random"
+                        link="/galeri/random"
                     />
 
-                    <Tombol
-                        gambar="/assets/kpu.png"
-                        nama="Lol"
-                    />
+
 
                 </div>
             </section>

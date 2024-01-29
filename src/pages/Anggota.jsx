@@ -18,56 +18,56 @@ const Anggota = () => {
                     />
 
                     <CardAnggota
-                        gambar="https://assets-global.website-files.com/65b3ea448c2bd342c4b99cf7/65b3edbe0c1c567dcb83a5c2_IMG-20240126-WA0017.jpg"
-                        nama="✨Eka Mulya Wardini✨"
-                        ig="https://www.instagram.com/blim.bink/"
-                        fb=""
-                        yt=""
+                        gambar="/profil/pEka.jpg"
+                        nama="✨Eka Mulia Wardini✨"
+                        ig="https://www.instagram.com/eka.muliaa/"
+                        // fb=""
+                        // yt=""
                         posisi="(KPPS 1)"
                     />
 
                     <CardAnggota
-                        gambar="https://assets-global.website-files.com/65b3ea448c2bd342c4b99cf7/65b3edbe0c1c567dcb83a5c2_IMG-20240126-WA0017.jpg"
+                        gambar="/profil/pNunung.jpg"
                         nama="✨Nunung Elinda Aswari✨"
-                        ig="https://www.instagram.com/blim.bink/"
-                        fb=""
-                        yt=""
+                        // ig=""
+                        // fb=""
+                        // yt=""
                         posisi="(KPPS 4)"
                     />
 
                     <CardAnggota
                         gambar="/profil/pIjuk.jpg"
                         nama="✨Indra Setiawan✨"
-                        ig="https://www.instagram.com/blim.bink/"
-                        fb=""
-                        yt=""
+                        // ig=""
+                        // fb=""
+                        // yt=""
                         posisi="(KPPS 6)"
                     />
 
                     <CardAnggota
-                        gambar="https://assets-global.website-files.com/65b3ea448c2bd342c4b99cf7/65b3edbe0c1c567dcb83a5c2_IMG-20240126-WA0017.jpg"
+                        gambar="/profil/pYoni.jpg"
                         nama="✨Yoni Sulastri✨"
-                        ig="https://www.instagram.com/blim.bink/"
-                        fb=""
-                        yt=""
+                        // ig=""
+                        // fb=""
+                        // yt=""
                         posisi="(KPPS 3)"
                     />
 
                     <CardAnggota
-                        gambar="https://assets-global.website-files.com/65b3ea448c2bd342c4b99cf7/65b3edbe0c1c567dcb83a5c2_IMG-20240126-WA0017.jpg"
+                        gambar="/profil/pTia.jpg"
                         nama="✨Septiana Azmi✨"
-                        ig="https://www.instagram.com/blim.bink/"
-                        fb=""
-                        yt=""
+                        // ig=""
+                        // fb=""
+                        // yt=""
                         posisi="(KPPS 2)"
                     />
 
                     <CardAnggota
-                        gambar="https://assets-global.website-files.com/65b3ea448c2bd342c4b99cf7/65b3edbe0c1c567dcb83a5c2_IMG-20240126-WA0017.jpg"
+                        gambar="/profil/pOjan.jpg"
                         nama="✨Paozan Azima✨"
-                        ig="https://www.instagram.com/blim.bink/"
-                        fb=""
-                        yt=""
+                        ig="https://www.instagram.com/paozanazima__/"
+                        // fb=""
+                        // yt=""
                         posisi="(KPPS 7)"
                     />
 
