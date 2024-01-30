@@ -10,6 +10,12 @@ const Anggota = () => {
             <section className="galeri">
                 <div className="w-layout-grid grid-galeri-list">
 
+                    <Tombol
+                        gambar="/assets/kpu.png"
+                        nama="Kumpulan Aplikasi KPU 🖥️⚡"
+                        link="/dokumen/Kumpulan-app"
+                    />
+
                     <FileDownloader
                         filePath="\assets\dok\PEDOMAN-TEKNIS-PELAKSANAAN-PEMUNGUTAN-DAN-PENGHITUNGAN-SUARA.pdf"
                         fileName=""
@@ -44,6 +50,7 @@ const Anggota = () => {
                         nama="Berkas Pendukung"
                         link="/dokumen/berkas-pendukung"
                     />
+
 
                 </div>
             </section>

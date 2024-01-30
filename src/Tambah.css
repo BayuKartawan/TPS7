@@ -1018,6 +1018,11 @@ textarea.w-select {
 }
 
 @media screen and (max-width: 479px) {
+
+    .capres {
+        font-size: x-large;
+    }
+
     .w-container {
         max-width: none;
     }
@@ -2224,8 +2229,8 @@ textarea.w-select {
 
 
 .w-layout-grid {
-    grid-row-gap: 16px;
-    grid-column-gap: 16px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr;
     grid-auto-columns: 1fr;
@@ -2245,7 +2250,7 @@ textarea.w-select {
 }
 
 .nav-large {
-    z-index: 1;
+    z-index: 100;
     background-color: #c21010;
     border-bottom: 2px solid #fff;
     flex-direction: row;
@@ -2367,7 +2372,7 @@ textarea.w-select {
     text-align: center;
     justify-content: center;
     font-family: Montserrat, sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
     display: flex;
     margin-bottom: 10px;
@@ -2603,11 +2608,15 @@ textarea.w-select {
         margin-left: 20px;
         margin-right: 20px;
         top: -50px;
+        margin-bottom: 120px;
     }
 
     .columns {
         background-color: #fff;
         box-shadow: 0 19px 19px -8px rgba(0, 0, 0, .2);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding-bottom: 14px;
     }
 
     .column {
@@ -2653,7 +2662,7 @@ textarea.w-select {
     }
 
     .div-block-9 {
-        width: 270px;
+        width: 100%;
     }
 
     .div-block-10 {
@@ -2679,6 +2688,7 @@ textarea.w-select {
         margin-left: 10px;
         margin-right: 10px;
         top: 50px;
+        margin-bottom: 220px;
     }
 
     .text-block-3 {
@@ -2726,7 +2736,11 @@ textarea.w-select {
     }
 
     .div-block-9 {
-        width: 150px;
+        width: 100%;
+    }
+
+    .judul-lokasi {
+        font-size: 20px;
     }
 }
 

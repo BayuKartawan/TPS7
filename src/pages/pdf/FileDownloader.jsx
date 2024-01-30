@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Swal from 'sweetalert2';
 
 class FileDownloader extends React.Component {
     constructor(props) {
@@ -13,27 +14,40 @@ class FileDownloader extends React.Component {
     downloadFile = () => {
         const { filePath, fileName } = this.props;
 
-        // Set state downloading menjadi true saat memulai unduhan
-        this.setState({ downloading: true });
+        // Menggunakan SweetAlert untuk konfirmasi sebelum pengunduhan
+        Swal.fire({
+            title: 'Konfirmasi',
+            text: 'Apakah Anda yakin ingin mendownload file ini?',
+            icon: 'question',
+            showCancelButton: true,
+            confirmButtonText: 'Ya, Download!',
+            cancelButtonText: 'Batal',
+        }).then((result) => {
+            // Jika pengguna menekan "Ya"
+            if (result.isConfirmed) {
+                // Set state downloading menjadi true saat memulai unduhan
+                this.setState({ downloading: true });
 
-        // Membuat elemen <a> untuk menginisiasi pengunduhan
-        const downloadLink = document.createElement('a');
-        downloadLink.href = filePath;
+                // Membuat elemen <a> untuk menginisiasi pengunduhan
+                const downloadLink = document.createElement('a');
+                downloadLink.href = filePath;
 
-        // Menggunakan nama file dari prop jika tersedia, jika tidak mendapatkan nama file dari path
-        downloadLink.download = fileName || filePath.split('/').pop();
+                // Menggunakan nama file dari prop jika tersedia, jika tidak mendapatkan nama file dari path
+                downloadLink.download = fileName || filePath.split('/').pop();
 
-        // Menambahkan elemen ke dalam DOM dan melakukan klik untuk memulai pengunduhan
-        document.body.appendChild(downloadLink);
-        downloadLink.click();
+                // Menambahkan elemen ke dalam DOM dan melakukan klik untuk memulai pengunduhan
+                document.body.appendChild(downloadLink);
+                downloadLink.click();
 
-        // Menghapus elemen setelah pengunduhan selesai
-        document.body.removeChild(downloadLink);
+                // Menghapus elemen setelah pengunduhan selesai
+                document.body.removeChild(downloadLink);
 
-        // Setelah unduhan selesai, tunggu 2 detik sebelum mengubah state downloading menjadi false
-        setTimeout(() => {
-            this.setState({ downloading: false });
-        }, 2000);
+                // Setelah unduhan selesai, tunggu 2 detik sebelum mengubah state downloading menjadi false
+                setTimeout(() => {
+                    this.setState({ downloading: false });
+                }, 2000);
+            }
+        });
     };
 
     render() {
@@ -57,7 +71,9 @@ class FileDownloader extends React.Component {
                     width="30"
                     height="30"
                     id="w-node-_810fe0a4-027b-107d-06b7-0dd7dc8b6f04-c4b99cfa"
-                    className="icon-galeri" />
+                    className="icon-galeri"
+                    alt="KPU Icon"
+                />
 
                 {downloading ? 'Downloading...' : buttonText || 'Download File'}
             </button>

@@ -19,6 +19,8 @@ import Bimtek1 from "./pages/dokumen/Bimtek1"
 import BerkasHariH from "./pages/dokumen/BerkasHariH";
 import BerkasP from "./pages/dokumen/BerkasP"
 import Bimtek2 from "./pages/dokumen/Bimtek2"
+import KumpulanApp from "./pages/dokumen/KumpulanApp"
+import Capres from "./pages/dokumen/Capres"
 // vidio
 import Vidio from "./pages/galeri/Vidio";
 // halaman tidak ditemukan
@@ -51,6 +53,8 @@ function App() {
           <Route path="/dokumen/berkas-hari-h" element={<BerkasHariH />} />
           <Route path="/dokumen/berkas-pendukung" element={<BerkasP />} />
           <Route path="/dokumen/bimtek2" element={<Bimtek2 />} />
+          <Route path="/dokumen/kumpulan-app" element={<KumpulanApp />} />
+          <Route path="/dokumen/kumpulan-app/calon-presiden" element={<Capres />} />
           {/* VIDIO */}
           <Route path="/galeri/vidio" element={<Vidio />} />
           {/* halaman tidak di temukan */}

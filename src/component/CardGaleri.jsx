@@ -19,11 +19,11 @@ const CardGaleri = (props) => {
     }
 
     // logika zoom
-    
+
     const handleZoom = () => {
-    // Membuka gambar dalam jendela baru
-    window.open(props.gambar, 'Gambar Full', 'width=1000, height=800');
-};
+        // Membuka gambar dalam jendela baru
+        window.open(props.gambar, 'Gambar Full', 'width=1000, height=800');
+    };
 
 
     return (
@@ -47,7 +47,7 @@ const CardGaleri = (props) => {
                     className="icon-perbesar"
                     onClick={handleZoom}
                 />
-                
+
                 <img
                     src="/unduh.svg"
                     loading="lazy"
