@@ -1,5 +1,6 @@
 import HeaderGbr from "../component/HeaderGbr"
 import CountDown from "../component/Countdown"
+import "./footer.css"
 
 const Home = () => {
 
@@ -33,7 +34,29 @@ const Home = () => {
                 </iframe>
             </div>
 
-            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            <hr
+                style={{
+                    color: "red",
+                    marginTop: "120px"
+                }} />
+
+            <div className="footer">
+                <div className="blok1">
+                    <div className="teks-judul-f">Design with 💖 by Bayu Kartawan</div>
+                    <div className="teks-judul-f-copy">© 2024 All Rights Reserved <br />TPS 7 Desa Sikur Barat</div>
+                </div>
+                <div className="blok1">
+                    <div className="teks-judul-f">About me</div>
+                    <div className="blok-sosmed">
+                        <a href="https://www.facebook.com/tuanpapuk.tuanpapuk" target="_blank" rel="noopener noreferrer" className="teks-jdes-f">Facebook</a>
+                        <a href="https://www.instagram.com/blim.bink/" target="_blank" rel="noopener noreferrer" className="teks-jdes-f">Instagram</a>
+                        <a href="https://www.linkedin.com/in/bayu-kartawan-01bba4297/" target="_blank" rel="noopener noreferrer" className="teks-jdes-f">Inkedin</a>
+                        <a href="https://www.youtube.com/@tipahgabe8878" target="_blank" rel="noopener noreferrer" className="teks-jdes-f">Youtube</a>
+                    </div>
+                </div>
+            </div>
+
+            <br /><br /><br /><br /><br /><br /><br />
         </div>
 
     )
