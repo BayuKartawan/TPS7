@@ -500,6 +500,12 @@ ol {
     list-style: none;
 }
 
+.share-wa:hover {
+    background-color: red;
+    transition: 0.4s;
+    color: white;
+}
+
 .w-embed:before,
 .w-embed:after {
     content: " ";

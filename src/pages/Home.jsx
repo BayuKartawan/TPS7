@@ -72,9 +72,9 @@ const Home = () => {
                 }}>
 
                 <button
+                    className="share-wa"
                     style={{
                         fontFamily: "Montserrat, sans-serif",
-                        backgroundColor: "ButtonFace",
                         textAlign: "center",
                         marginLeft: "10px",
                         marginRight: "10px",
