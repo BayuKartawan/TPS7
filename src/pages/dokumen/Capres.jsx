@@ -18,7 +18,14 @@ const Capres = () => {
                 style={{
                     fontFamily: "Montserrat, sans-serif"
                 }}>Calon Presiden RI 2029 ⚡</h1>
-            <img src="/capres.jpg" alt="calon presiden 2024" />
+            <img
+                loading="lazy"
+                src="/pBay.jpg"
+                alt="calon presiden 2024"
+                style={{
+                    aspectRatio: "1/1",
+                    objectFit: "cover"
+                }} />
             <br /><br />
 
             <Link to="/dokumen/kumpulan-app"

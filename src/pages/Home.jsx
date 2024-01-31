@@ -6,6 +6,32 @@ const Home = () => {
 
     const targetDate = '2024-02-14T00:00:00';
 
+    // Fungsi untuk membagikan link ke WhatsApp
+    const shareToWhatsApp = () => {
+
+        // Ganti 'TEXT_TO_SHARE' dengan teks yang ingin Anda tambahkan
+        const textToShare = '🗳️ Pakettt\n' + '.\n' +
+            'Kami dengan gembira mengundang Anda untuk hadir dan berpartisipasi dalam proses demokrasi! Datanglah ke Tempat Pemungutan Suara (TPS) pada:\n' +
+            '📅 Tanggal: 14 Februari 2024\n' +
+            '📍 Lokasi TPS 07: \n[Halaman Rumah H. Mawardi]\natau bisa lihat di google map🗺️\nhttps://maps.app.goo.gl/cGo6jbmkoH3sj1Yx8\n' + '.\n' +
+            'Terima kasih atas partisipasi Anda. Mari kita jadikan tanggal 14 Februari sebagai momen untuk memberikan suara dan memperkuat suara kita dalam membangun masyarakat yang lebih baik.\n' + '.\n' +
+            'Kunjungi website kami:👇🏼👇🏼👇🏼\n' + 'https://tps7-penyenggir.vercel.app/\n.\n' +
+            '🇮🇩 #Pemilu2024 #SuaraAndaMenentukan #TPS07DesaSikurBarat';
+
+
+        // Membuat link WhatsApp dengan pesan
+        const whatsappLink = `https://api.whatsapp.com/send?text=${encodeURIComponent(`${textToShare}`)}`;
+
+        // Buka link WhatsApp di jendela baru
+        window.open(whatsappLink, '_blank');
+    }
+
+    // Fungsi untuk menangani klik tombol
+    const handleButtonClick = () => {
+        // Panggil fungsi membagikan ke WhatsApp
+        shareToWhatsApp();
+    }
+
     return (
         <div>
             <HeaderGbr />
@@ -14,7 +40,10 @@ const Home = () => {
                 style={{ display: "flex", justifyContent: "center" }}>
                 <h3
                     className="judul-lokasi"
-                    style={{ fontFamily: "Montserrat, sans-serif", marginBottom: "30px" }}>🗺️ Lokasi TPS 07 Desa Sikur Barat</h3>
+                    style={{
+                        fontFamily: "Montserrat, sans-serif",
+                        marginBottom: "30px"
+                    }}>🗺️ Lokasi TPS 07 Desa Sikur Barat</h3>
             </div>
 
 
@@ -32,6 +61,31 @@ const Home = () => {
                 >
                     <a href="https://www.maps.ie/population/">Population Estimator map</a>
                 </iframe>
+            </div>
+
+            {/* share lokasi */}
+            <div
+                style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    marginTop: "20px"
+                }}>
+
+                <button
+                    style={{
+                        fontFamily: "Montserrat, sans-serif",
+                        backgroundColor: "ButtonFace",
+                        textAlign: "center",
+                        marginLeft: "10px",
+                        marginRight: "10px",
+                        padding: "10px",
+                        border: "1px solid #630b0b",
+                        borderRadius: "10px"
+                    }}
+                    onClick={handleButtonClick} // Menambahkan event handler untuk klik tombol
+                >
+                    Tekan untuk membagikan lokasi TPS 07 Desa Sikur Barat 📤
+                </button>
             </div>
 
             <hr

@@ -9,15 +9,6 @@ const Anggota = () => {
                 <div className="w-layout-grid grid">
 
                     <CardAnggota
-                        gambar="/pBay.jpg"
-                        nama="✨Bayu Kartawan✨"
-                        ig="https://www.instagram.com/blim.bink/"
-                        fb="https://www.facebook.com/tuanpapuk.tuanpapuk"
-                        yt="https://www.youtube.com/@tipahgabe8878"
-                        posisi="(KPPS 5)"
-                    />
-
-                    <CardAnggota
                         gambar="/profil/pEka.jpg"
                         nama="✨Eka Mulia Wardini✨"
                         ig="https://www.instagram.com/eka.muliaa/"
@@ -27,21 +18,12 @@ const Anggota = () => {
                     />
 
                     <CardAnggota
-                        gambar="/profil/pNunung.jpg"
-                        nama="✨Nunung Elinda Aswari✨"
+                        gambar="/profil/pTia.jpg"
+                        nama="✨Septiana Azmi✨"
                         // ig=""
                         // fb=""
                         // yt=""
-                        posisi="(KPPS 4)"
-                    />
-
-                    <CardAnggota
-                        gambar="/profil/pIjuk.jpg"
-                        nama="✨Indra Setiawan✨"
-                        // ig=""
-                        // fb=""
-                        // yt=""
-                        posisi="(KPPS 6)"
+                        posisi="(KPPS 2)"
                     />
 
                     <CardAnggota
@@ -54,12 +36,30 @@ const Anggota = () => {
                     />
 
                     <CardAnggota
-                        gambar="/profil/pTia.jpg"
-                        nama="✨Septiana Azmi✨"
+                        gambar="/profil/pNunung.jpg"
+                        nama="✨Nunung Elinda Aswari✨"
                         // ig=""
                         // fb=""
                         // yt=""
-                        posisi="(KPPS 2)"
+                        posisi="(KPPS 4)"
+                    />
+
+                    <CardAnggota
+                        gambar="/pBay.jpg"
+                        nama="✨Bayu Kartawan✨"
+                        ig="https://www.instagram.com/blim.bink/"
+                        fb="https://www.facebook.com/tuanpapuk.tuanpapuk"
+                        yt="https://www.youtube.com/@tipahgabe8878"
+                        posisi="(KPPS 5)"
+                    />
+
+                    <CardAnggota
+                        gambar="/profil/pIjuk.jpg"
+                        nama="✨Indra Setiawan✨"
+                        // ig=""
+                        // fb=""
+                        // yt=""
+                        posisi="(KPPS 6)"
                     />
 
                     <CardAnggota

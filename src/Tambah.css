@@ -2687,8 +2687,9 @@ textarea.w-select {
     .hitung {
         margin-left: 10px;
         margin-right: 10px;
-        top: 50px;
-        margin-bottom: 220px;
+        margin-bottom: 150px;
+        position: relative;
+        top: -50px;
     }
 
     .text-block-3 {
@@ -2741,6 +2742,8 @@ textarea.w-select {
 
     .judul-lokasi {
         font-size: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
