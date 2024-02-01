@@ -53,8 +53,9 @@ const Bertanya = (pos) => {
                     fontFamily: "Montserrat, sans-serif",
                     fontWeight: "500",
                     padding: "5px 20px 5px 20px",
-                    backgroundColor: "#CFE8A9",
-                    borderBottom: "1px solid red"
+                    backgroundColor: "#F8E4B7",
+                    borderBottom: "1px solid red",
+                    minHeight: "50px"
                 }}>
                     {tampilkanKomponen ? '- ' : '+ '}
                     {/* Judul Pertanyaan */}
