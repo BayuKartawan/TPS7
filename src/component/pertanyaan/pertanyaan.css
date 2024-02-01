@@ -1,0 +1,20 @@
+.pertanyaan {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.komponen {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    width: 100%;
+}
+
+.komponen.show {
+    opacity: 1;
+}

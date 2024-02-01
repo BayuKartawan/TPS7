@@ -1,10 +1,16 @@
+
 import HeaderGbr from "../component/HeaderGbr"
 import CountDown from "../component/Countdown"
+// component pertanyaan
+import Bertanya from "../component/pertanyaan/Bertanya"
+// css style
 import "./footer.css"
 
 const Home = () => {
 
     const targetDate = '2024-02-14T00:00:00';
+
+
 
     // Fungsi untuk membagikan link ke WhatsApp
     const shareToWhatsApp = () => {
@@ -36,19 +42,19 @@ const Home = () => {
         <div>
             <HeaderGbr />
             <CountDown targetDate={targetDate} />
+
+            {/* lokasi */}
             <div
                 style={{ display: "flex", justifyContent: "center" }}>
                 <h3
                     className="judul-lokasi"
                     style={{
                         fontFamily: "Montserrat, sans-serif",
-                        marginBottom: "30px"
+                        marginBottom: "10px"
                     }}>Lokasi TPS 07 Desa Sikur Barat🗺️</h3>
             </div>
-
-
+            {/* map */}
             <div style={{ width: '100%', maxWidth: "900px", marginRight: "auto", marginLeft: "auto", display: "flex", gridColumn: "50px" }}>
-
                 <iframe
                     width="100%"
                     height="500"
@@ -62,13 +68,13 @@ const Home = () => {
                     <a href="https://www.maps.ie/population/">Population Estimator map</a>
                 </iframe>
             </div>
-
             {/* share lokasi */}
             <div
                 style={{
                     display: "flex",
                     justifyContent: "center",
-                    marginTop: "20px"
+                    marginTop: "20px",
+                    marginBottom: "30px"
                 }}>
 
                 <button
@@ -84,10 +90,110 @@ const Home = () => {
                     }}
                     onClick={handleButtonClick} // Menambahkan event handler untuk klik tombol
                 >
-                    Tekan untuk membagikan lokasi TPS 07 Desa Sikur Barat 📤
+                    Tekan untuk membagikan lokasi dan undangan ke TPS 07 Desa Sikur Barat 📤
                 </button>
             </div>
 
+            {/* komponen pertanyaan */}
+            <Bertanya
+                pertanyaan="Ape te jauk jok TPS?"
+                list1="Formulir C-6 Pemberitahuan (Surat Undangan)"
+                gambar1="https://rumahpemilu.org/wp-content/uploads/2017/04/C6.jpg"
+                alt1="Formulir C-6 Pemberitahuan (Surat Undangan)"
+                list2="KTP-elektronik asli"
+                gambar2="https://jintung.kec-ayah.kebumenkab.go.id/uploads/gambar/14122020113249-Jintung-Kebumen-gutama.jpg"
+                list3="Surat Keterangan (Suket) Perekaman e-KTP (misal ndekman jari KTP)"
+                gambar3="https://blogpictures.99.co/cara-membuat-ktp-sementara.png"
+                list4="Jauk semeton n"
+                gambar4="https://media.tenor.com/IngwHN9bpEMAAAAM/tkthao219-bubududu.gif"
+            />
+            <Bertanya
+                pertanyaan="Brembe ruen surat suara nukn?"
+                gambar1="https://infopublik.id/assets/upload/headline//pp2crbmh8dstxjy.jpeg"
+                list2="Kertas warna abu-abu untuk calon Presiden dan Wakil Presiden"
+                list3="Kertas warna kuning untuk calon DPR RI"
+                list4="Kertas warna merah untuk calon DPD RI"
+                list5="Kertas warna biru untuk calon DPRD Provinsi"
+                list6="Kertas warna hijau untuk calon DPRD Kota/Kabupaten"
+            />
+            <Bertanya
+                pertanyaan="DPT, DAFTAR PEMILIH TEТАР (sudah terdaftar)"
+                list1="Mendapat 5 surat suara"
+                list2="Membawa form C.6 (C.PEMBERITAHUAN) dan KTP-el/Suket/identitas lain"
+                list3="Memilih mulai pukul 07.00-13.00 waktu setempat"
+            />
+            <Bertanya
+                pertanyaan="DPTB, DAFTAR PEMILIH TAMBAHAN (pindah memilih paling lambat H-7"
+                list1="Mendapat surat suara sesuai dapil"
+                list2="Membawa form A.5 dan KTP-el/ Suket/identitas lain"
+                list3="Memilih mulai pukul 07.00-13.00 waktu setempat"
+            />
+            <Bertanya
+                pertanyaan="DPK, DAFTAR PEMILIH KHUSUS (belum terdaftar)"
+                list1="Mendapat 5 surat suara (surat suara sisa)"
+                list2="Membawa KTP-el atau Suket dari 1214 Dukcapil"
+                list3="Memilih mulai pukul 12.00 - 13.00 waktu setempat di TPS sesuai alamat KTP-el/Suket"
+            />
+            <Bertanya
+                pertanyaan="Berembe ruen surat suara sah dan tidak sah?"
+                list1=""
+                gambar1="https://image.slidesharecdn.com/suratsuarasahdantidaksah-190414012035/75/surat-suara-sah-dan-tidak-sah-1-2048.jpg?cb=1666717487"
+                alt1="Panduan Tentang Suara Sah dan Tidak Sah Pada Pemilu Tahun 2019 (Pemilihan Presiden dan Wakil Presiden, DPD, DPR RI, DPRD Provinsi, DPRD Kabupaten Kota"
+                list2=""
+                gambar2="https://image.slidesharecdn.com/suratsuarasahdantidaksah-190414012035/75/surat-suara-sah-dan-tidak-sah-2-2048.jpg?cb=1666717487"
+                list3="Surat suara sah"
+                gambar3="https://image.slidesharecdn.com/suratsuarasahdantidaksah-190414012035/75/surat-suara-sah-dan-tidak-sah-3-2048.jpg?cb=1666717487"
+                gambar4="https://image.slidesharecdn.com/suratsuarasahdantidaksah-190414012035/75/surat-suara-sah-dan-tidak-sah-4-2048.jpg?cb=1666717487"
+                gambar5="https://image.slidesharecdn.com/suratsuarasahdantidaksah-190414012035/75/surat-suara-sah-dan-tidak-sah-5-2048.jpg?cb=1666717487"
+                gambar6="https://image.slidesharecdn.com/suratsuarasahdantidaksah-190414012035/75/surat-suara-sah-dan-tidak-sah-6-2048.jpg?cb=1666717487"
+                gambar7="https://image.slidesharecdn.com/suratsuarasahdantidaksah-190414012035/75/surat-suara-sah-dan-tidak-sah-7-2048.jpg?cb=1666717487"
+                gambar8="https://image.slidesharecdn.com/suratsuarasahdantidaksah-190414012035/75/surat-suara-sah-dan-tidak-sah-8-2048.jpg?cb=1666717487"
+                gambar9="https://image.slidesharecdn.com/suratsuarasahdantidaksah-190414012035/75/surat-suara-sah-dan-tidak-sah-9-2048.jpg?cb=1666717487"
+                gambar10="https://image.slidesharecdn.com/suratsuarasahdantidaksah-190414012035/75/surat-suara-sah-dan-tidak-sah-10-2048.jpg?cb=1666717487"
+                gambar11="https://image.slidesharecdn.com/suratsuarasahdantidaksah-190414012035/75/surat-suara-sah-dan-tidak-sah-11-2048.jpg?cb=1666717487"
+                gambar12="https://image.slidesharecdn.com/suratsuarasahdantidaksah-190414012035/75/surat-suara-sah-dan-tidak-sah-12-2048.jpg?cb=1666717487"
+                gambar13="https://image.slidesharecdn.com/suratsuarasahdantidaksah-190414012035/75/surat-suara-sah-dan-tidak-sah-13-2048.jpg?cb=1666717487"
+                gambar14="https://image.slidesharecdn.com/suratsuarasahdantidaksah-190414012035/75/surat-suara-sah-dan-tidak-sah-14-2048.jpg?cb=1666717487"
+                gambar15="https://image.slidesharecdn.com/suratsuarasahdantidaksah-190414012035/75/surat-suara-sah-dan-tidak-sah-15-2048.jpg?cb=1666717487"
+                gambar16="https://image.slidesharecdn.com/suratsuarasahdantidaksah-190414012035/75/surat-suara-sah-dan-tidak-sah-16-2048.jpg?cb=1666717487"
+                gambar17="https://image.slidesharecdn.com/suratsuarasahdantidaksah-190414012035/75/surat-suara-sah-dan-tidak-sah-17-2048.jpg?cb=1666717487"
+                gambar18="https://image.slidesharecdn.com/suratsuarasahdantidaksah-190414012035/75/surat-suara-sah-dan-tidak-sah-18-2048.jpg?cb=1666717487"
+                gambar19="https://image.slidesharecdn.com/suratsuarasahdantidaksah-190414012035/75/surat-suara-sah-dan-tidak-sah-19-2048.jpg?cb=1666717487"
+                gambar20="https://image.slidesharecdn.com/suratsuarasahdantidaksah-190414012035/75/surat-suara-sah-dan-tidak-sah-20-2048.jpg?cb=1666717487"
+                gambar21="https://image.slidesharecdn.com/suratsuarasahdantidaksah-190414012035/75/surat-suara-sah-dan-tidak-sah-21-2048.jpg?cb=1666717487"
+                gambar22="https://image.slidesharecdn.com/suratsuarasahdantidaksah-190414012035/75/surat-suara-sah-dan-tidak-sah-22-2048.jpg?cb=1666717487"
+                gambar23="https://image.slidesharecdn.com/suratsuarasahdantidaksah-190414012035/75/surat-suara-sah-dan-tidak-sah-23-2048.jpg?cb=1666717487"
+                gambar24="https://image.slidesharecdn.com/suratsuarasahdantidaksah-190414012035/75/surat-suara-sah-dan-tidak-sah-24-2048.jpg?cb=1666717487"
+                gambar25="https://image.slidesharecdn.com/suratsuarasahdantidaksah-190414012035/75/surat-suara-sah-dan-tidak-sah-25-2048.jpg?cb=1666717487"
+                gambar26="https://image.slidesharecdn.com/suratsuarasahdantidaksah-190414012035/75/surat-suara-sah-dan-tidak-sah-26-2048.jpg?cb=1666717487"
+                gambar27="https://image.slidesharecdn.com/suratsuarasahdantidaksah-190414012035/75/surat-suara-sah-dan-tidak-sah-27-2048.jpg?cb=1666717487"
+                gambar28="https://image.slidesharecdn.com/suratsuarasahdantidaksah-190414012035/75/surat-suara-sah-dan-tidak-sah-28-2048.jpg?cb=1666717487"
+                list4="Surat suara sah"
+                list5="Surat suara sah"
+                list6="Surat suara sah"
+                list7="Surat suara sah"
+                list8="Surat suara sah"
+                list9="Surat suara sah"
+                list10="Surat suara sah"
+                list11="Surat suara sah"
+                list12="Surat suara sah"
+                list13="Surat suara sah"
+                list14="Surat suara sah"
+                list15="Surat suara sah"
+                list16="Surat suara sah"
+                list17="Surat suara sah"
+                list18="Surat suara sah"
+                list19="Surat suara sah"
+                list20="Surat suara sah"
+                list21="Surat suara sah"
+                list22="Surat suara sah"
+                list23="Surat suara sah"
+                list24="Surat suara sah"
+                list25="Tidak Sah"
+                list26="Tidak Sah"
+                list27="Tidak Sah"
+                list28="Tidak Sah"
+            />
             <hr
                 style={{
                     color: "red",
