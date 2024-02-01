@@ -10,7 +10,7 @@ const Home = () => {
     const shareToWhatsApp = () => {
 
         // Ganti 'TEXT_TO_SHARE' dengan teks yang ingin Anda tambahkan
-        const textToShare = '🗳️ Pakettt\n' + '.\n' +
+        const textToShare = '🗳️ Pakettt                           \n' + '.                        \n' +
             'Kami dengan gembira mengundang Anda untuk hadir dan berpartisipasi dalam proses demokrasi! Datanglah ke Tempat Pemungutan Suara (TPS) pada:\n' +
             '📅 Tanggal: 14 Februari 2024\n' +
             '📍 Lokasi TPS 07: \n[Halaman Rumah H. Mawardi]\natau bisa lihat di google map🗺️\nhttps://maps.app.goo.gl/cGo6jbmkoH3sj1Yx8\n' + '.\n' +
@@ -43,7 +43,7 @@ const Home = () => {
                     style={{
                         fontFamily: "Montserrat, sans-serif",
                         marginBottom: "30px"
-                    }}>🗺️ Lokasi TPS 07 Desa Sikur Barat</h3>
+                    }}>Lokasi TPS 07 Desa Sikur Barat🗺️</h3>
             </div>
 
 
