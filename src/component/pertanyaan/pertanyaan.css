@@ -9,9 +9,7 @@
 
 .komponen {
     opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease, opacity 0.5s ease;
+    transition: opacity 0.5s ease;
     font-family: Montserrat, sans-serif;
     font-weight: 400;
     width: 100%;
