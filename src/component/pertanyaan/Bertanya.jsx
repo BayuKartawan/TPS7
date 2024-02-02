@@ -53,7 +53,7 @@ const Bertanya = (pos) => {
                     borderBottom: "1px solid red",
                     minHeight: "50px"
                 }}>
-                    {tampilkanKomponen ? '- ' : '+ '}
+                    {tampilkanKomponen ? '🔓 ' : '🔒 '}
                     {/* Judul Pertanyaan */}
                     {pos.pertanyaan}
                 </button>
