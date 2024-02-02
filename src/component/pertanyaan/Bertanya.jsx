@@ -18,11 +18,7 @@ const Bertanya = (pos) => {
 
             if (pos[listKey] || pos[gambarKey] || pos[altKey]) {
                 listItems.push(
-                    <li key={listKey} style={{
-                        paddingTop: "5px",
-                        paddingBottom: "5px",
-                        paddingRight: "5px"
-                    }}>
+                    <li key={listKey} className='list'>
                         {pos[listKey] && pos[listKey]}
                         <br />
                         {pos[gambarKey] && (
@@ -64,16 +60,34 @@ const Bertanya = (pos) => {
 
                 {/* ISI PERTANYAAN */}
                 <div className={`komponen ${tampilkanKomponen ? 'show' : ''}`}>
+
                     {tampilkanKomponen && (
                         // ISI PERTANYAAN
-                        <ul style={{
-                            backgroundColor: "white",
-                            width: "100%",
-                            textAlign: "justify",
-                            paddingTop: "5px"
-                        }}>
-                            {generateListItems()}
-                        </ul>
+                        <>
+                            <div className='tanya' ><div />
+                                <span >{pos.judul}</span><br />
+                                <span
+                                    className="pasal">{pos.pasal1}</span><br /><br />
+                                <span >{pos.despasal}</span><br />
+                            </div>
+
+                            <ul style={{
+                                backgroundColor: "white",
+                                width: "100%",
+                                textAlign: "justify",
+                                paddingTop: "5px"
+                            }}>
+                                {generateListItems()}
+                            </ul>
+                            <div className='tanya'>
+                                <span className='pasal'>{pos.pasal2}</span>
+                                <ul>
+                                    <li className='list'>{pos.despasal2}</li>
+                                    <li className='list'>{pos.despasal3}</li>
+                                </ul>
+                            </div>
+
+                        </>
                     )}
 
                     {/* Tombol Tutup */}
@@ -89,7 +103,7 @@ const Bertanya = (pos) => {
                         </button>
                     )}
                 </div>
-            </div>
+            </div >
         </>
     );
 }

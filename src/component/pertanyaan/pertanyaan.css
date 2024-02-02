@@ -18,3 +18,24 @@
 .komponen.show {
     opacity: 1;
 }
+
+.tanya {
+    font-family: Montserrat, sans-serif;
+    width: "100%";
+    text-align: left;
+    font-weight: 400;
+    padding: 5px 20px 5px 20px;
+    background-color: #ffffff;
+    min-height: 50px;
+    z-index: -40;
+}
+
+.pasal {
+    font-weight: 600;
+}
+
+.list {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}

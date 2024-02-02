@@ -95,6 +95,22 @@ const Home = () => {
             </div>
 
             {/* komponen pertanyaan */}
+
+            <Bertanya
+                pertanyaan="LARANGAN PEMILIH MEMBAWA HP PADA DI BILIK SUARA TPS?"
+                judul="(Menurut Peraturan KPU No. 25 Tahun 2023)"
+                pasal1="Pasal 25"
+                despasal="Sebelum Pemilih melakukan pemberian suara,  ketua KPPS:"
+                list1="Menandatangani surat suara masing-masing jenis Pemilu pada tempat yang telah ditentukan untuk diberikan kepada Pemilih;"
+                list2="Memanggil Pemilih yang telah mengisi daftar hadir untuk memberikan suara berdasarkan prinsip urutan kehadiran Pemilih"
+                list3="Memberikan 5 (lima) jenis surat suara yang telah ditandatangani sebagaimana dimaksud dalam huruf a, terdiri dari Surat Suara Presiden dan Wakil Presiden, Surat Suara DPR, Surat Suara DPD, Surat Suara DPRD Provinsi serta Surat Suara DPRD Kabupaten/Kota, dalam keadaan baik/tidak rusak serta dalam keadaan terlipat kepada Pemilih, kecuali untuk wilayah Provinsi Daerah Khusus Ibukota Jakarta, hanya diberikan 4 (empat) jenis surat suara, yang terdiri dari Surat Suara Presiden dan Wakil Presiden, Surat Suara DPR, Surat Suara DPD, dan Surat Suara DPRD provinsi;"
+                list4="Mengingatkan Pemilih untuk memeriksa dan meneliti surat suara tersebut dalam keadaan tidak rusak; dan "
+                list5="Mengingatkan dan melarang Pemilih membawa telepon genggam dan/atau alat perekam gambar lainnya ke bilik suara."
+                pasal2="Pasal 28"
+                despasal2="Pemilih tidak boleh membubuhkan tulisan dan/atau catatan apa pun pada surat suara."
+                despasal3=" Pemilih tidak boleh mendokumentasikan hak pilihnya di bilik suara."
+            />
+
             <Bertanya
                 pertanyaan="Ape te jauk jok TPS?"
                 list1="Formulir C-6 Pemberitahuan (Surat Undangan)"
@@ -194,6 +210,7 @@ const Home = () => {
                 list27="Tidak Sah"
                 list28="Tidak Sah"
             />
+
             <hr
                 style={{
                     color: "red",
