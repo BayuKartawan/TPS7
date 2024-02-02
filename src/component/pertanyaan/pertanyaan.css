@@ -9,7 +9,9 @@
 
 .komponen {
     opacity: 0;
-    transition: opacity 0.5s ease;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
     font-family: Montserrat, sans-serif;
     font-weight: 400;
     width: 100%;
@@ -17,4 +19,6 @@
 
 .komponen.show {
     opacity: 1;
+    max-height: 1000px;
+    /* Nilai maksimal yang mencukupi */
 }
