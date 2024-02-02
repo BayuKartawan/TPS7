@@ -23,16 +23,24 @@ const Anggota = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         gambar="/assets/kpu.png"
-                        nama="SIAKBA ⚡⚡⚡"
-                        link="https://siakba.kpu.go.id/"
+                        nama="Cek DPT ⚡⚡⚡"
+                        link="https://cekdptonline.kpu.go.id/"
                     />
 
                     <Tombol
                         target="_blank"
                         rel="noopener noreferrer"
                         gambar="/assets/kpu.png"
-                        nama="Cek DPT ⚡⚡⚡"
-                        link="https://cekdptonline.kpu.go.id/"
+                        nama="Scan bar code 📷"
+                        link="https://dnschecker.org/qr-code-scanner.php"
+                    />
+
+                    <Tombol
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        gambar="/assets/kpu.png"
+                        nama="SIAKBA ⚡⚡⚡"
+                        link="https://siakba.kpu.go.id/"
                     />
 
                     <Tombol
