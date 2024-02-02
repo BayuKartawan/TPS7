@@ -3,6 +3,7 @@ import HeaderGbr from "../component/HeaderGbr"
 import CountDown from "../component/Countdown"
 // component pertanyaan
 import Bertanya from "../component/pertanyaan/Bertanya"
+import Larangan from "../component/pertanyaan/Larangan"
 // css style
 import "./footer.css"
 
@@ -96,7 +97,7 @@ const Home = () => {
 
             {/* komponen pertanyaan */}
 
-            <Bertanya
+            <Larangan
                 pertanyaan="LARANGAN PEMILIH MEMBAWA HP PADA DI BILIK SUARA TPS?"
                 judul="(Menurut Peraturan KPU No. 25 Tahun 2023)"
                 pasal1="Pasal 25"
