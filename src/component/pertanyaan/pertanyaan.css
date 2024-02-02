@@ -28,6 +28,7 @@
     background-color: #ffffff;
     min-height: 50px;
     z-index: -40;
+    overflow-wrap: anywhere;
 }
 
 .pasal {
@@ -38,4 +39,5 @@
     padding-top: 5px;
     padding-bottom: 5px;
     padding-right: 5px;
+    overflow-wrap: anywhere;
 }
