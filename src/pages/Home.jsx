@@ -87,7 +87,8 @@ const Home = () => {
                         marginRight: "10px",
                         padding: "10px",
                         border: "1px solid #630b0b",
-                        borderRadius: "10px"
+                        borderRadius: "10px",
+                        boxShadow: "0px 5px 15px rgba(44, 44, 44, 0.126)"
                     }}
                     onClick={handleButtonClick} // Menambahkan event handler untuk klik tombol
                 >
@@ -228,7 +229,7 @@ const Home = () => {
                     <div className="blok-sosmed">
                         <a href="https://www.facebook.com/tuanpapuk.tuanpapuk" target="_blank" rel="noopener noreferrer" className="teks-jdes-f">Facebook</a>
                         <a href="https://www.instagram.com/blim.bink/" target="_blank" rel="noopener noreferrer" className="teks-jdes-f">Instagram</a>
-                        <a href="https://www.linkedin.com/in/bayu-kartawan-01bba4297/" target="_blank" rel="noopener noreferrer" className="teks-jdes-f">Inkedin</a>
+                        <a href="https://www.linkedin.com/in/bayu-kartawan-01bba4297/" target="_blank" rel="noopener noreferrer" className="teks-jdes-f">Linkedin</a>
                         <a href="https://www.youtube.com/@tipahgabe8878" target="_blank" rel="noopener noreferrer" className="teks-jdes-f">Youtube</a>
                     </div>
                 </div>

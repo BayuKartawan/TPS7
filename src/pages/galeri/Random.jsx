@@ -1,4 +1,4 @@
-// import CardGaleri from "../../component/CardGaleri"
+import CardGaleri from "../../component/CardGaleri"
 
 const Random = () => {
     return (
@@ -7,7 +7,7 @@ const Random = () => {
             <br />
 
             {/* hapus jika sudah ada file */}
-            <div style={{
+            {/* <div style={{
                 display: "flex",
                 justifyContent: "center"
             }}>
@@ -20,22 +20,42 @@ const Random = () => {
                     fontFamily: "Montserrat, sans-serif",
                     borderRadius: "10px"
                 }}>Gambar Masi Kosong ....</span>
-            </div>
+            </div> */}
 
             <section className="isi-galeri">
                 <div className="w-layout-grid">
 
-                    {/* <CardGaleri
-                        gambar="\bimtek1\bt1-1.jpg"
-                    />
-n
                     <CardGaleri
-                        gambar="\bimtek1\bt1-2.jpg"
+                        gambar="\random\r1.jpg"
                     />
 
                     <CardGaleri
-                        gambar="\bimtek1\bt1-3.jpg"
-                    /> */}
+                        gambar="\random\r2.jpg"
+                    />
+
+                    <CardGaleri
+                        gambar="\random\r3.jpg"
+                    />
+
+                    <CardGaleri
+                        gambar="\random\r4.jpg"
+                    />
+
+                    <CardGaleri
+                        gambar="\random\r5.jpg"
+                    />
+
+                    <CardGaleri
+                        gambar="\random\r6.jpg"
+                    />
+
+                    <CardGaleri
+                        gambar="\random\r7.jpg"
+                    />
+
+                    <CardGaleri
+                        gambar="\random\r8.jpg"
+                    />
 
                 </div>
             </section>
