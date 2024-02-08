@@ -8,7 +8,7 @@
 .teks-judul-f {
     margin-bottom: 8px;
     font-family: Montserrat, sans-serif;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .teks-judul-f-copy {
@@ -19,7 +19,7 @@
 
 .blok-sosmed {
     grid-column-gap: 5px;
-    grid-row-gap: 5px;
+    grid-row-gap: 8px;
     flex-direction: column;
     display: flex;
 }
@@ -30,6 +30,10 @@
     font-family: Montserrat, sans-serif;
     font-weight: 500;
     text-decoration: none;
+}
+
+.teks-jdes-f:hover {
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 767px) {
@@ -44,5 +48,9 @@
     .blok1,
     .teks-judul-f-copy {
         text-align: center;
+    }
+
+    .teks-judul-f {
+        margin-top: 15px;
     }
 }

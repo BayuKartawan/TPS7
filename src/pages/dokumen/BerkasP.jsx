@@ -1,4 +1,4 @@
-// import FileDownloader from "../pdf/FileDownloader"
+import FileDownloader from "../pdf/FileDownloader"
 import TombolBack from '../../component/TombolBack';
 
 import Safe from 'react-safe'
@@ -14,7 +14,7 @@ const BerkasP = () => {
             />
 
             {/* hapus jika sudah ada file */}
-            <div style={{
+            {/* <div style={{
                 display: "flex",
                 justifyContent: "center"
             }}>
@@ -27,16 +27,36 @@ const BerkasP = () => {
                     fontFamily: "Montserrat, sans-serif",
                     borderRadius: "10px"
                 }}>File Masi Kosong ....</span>
-            </div>
+            </div> */}
 
             <section className="galeri">
                 <div className="w-layout-grid grid-galeri-list">
 
-                    {/* <FileDownloader
-                        filePath=".pdf"
-                        fileName=".pdf"
-                        buttonText=""
-                    /> */}
+                    <FileDownloader
+                        filePath="https://drive.google.com/file/d/1Xc0wDDsaIeYP4qpbT_bqMaH8k8DvOYxo/view?usp=drive_link"
+                        fileName="COVER BUKU PANDUAN KPPS PEMILU 2024"
+                        buttonText="COVER BUKU PANDUAN KPPS PEMILU 2024"
+                    />
+
+                    <FileDownloader
+                        filePath="https://drive.google.com/file/d/1Yocs0bTL6kPOv5nzHaBT6DlUjnTVhsmk/view?usp=drive_link"
+                        fileName="BUKU PANDUAN KPPS PEMILU 2024_V3"
+                        buttonText="BUKU PANDUAN KPPS PEMILU 2024_V3"
+                    />
+
+                    <FileDownloader
+                        filePath="https://drive.google.com/file/d/1wVb1UAdAS7-j0Dvd8nwhEA6UQ0qONvC9/view?usp=drive_link"
+                        fileName="Logistik Pemilu 2024_A4 (Greyscale)"
+                        buttonText="Logistik Pemilu 2024_A4 (Greyscale)"
+                    />
+
+
+                    <FileDownloader
+                        filePath="https://drive.google.com/file/d/1oeEv3XNlxG4fXbndJshLOJwjVBw4uhhd/view?usp=drive_link"
+                        fileName="Surat suara sah tidak sah F4_(Greyscale)"
+                        buttonText="Surat suara sah tidak sah F4_(Greyscale)"
+                    />
+
 
 
                 </div>

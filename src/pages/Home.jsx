@@ -99,7 +99,7 @@ const Home = () => {
             {/* komponen pertanyaan */}
 
             <Larangan
-                pertanyaan="LARANGAN PEMILIH MEMBAWA HP PADA DI BILIK SUARA TPS?"
+                pertanyaan="Larangan Pemilih Membawa HP di Bilik Suara TPS?"
                 judul="(Menurut Peraturan KPU No. 25 Tahun 2023)"
                 pasal1="Pasal 25"
                 despasal="Sebelum Pemilih melakukan pemberian suara,  ketua KPPS:"
@@ -135,23 +135,11 @@ const Home = () => {
                 list6="Kertas warna hijau untuk calon DPRD Kota/Kabupaten"
             />
             <Bertanya
-                pertanyaan="DPT, DAFTAR PEMILIH TEТАР (sudah terdaftar)"
-                list1="Mendapat 5 surat suara"
-                list2="Membawa form C.6 (C.PEMBERITAHUAN) dan KTP-el/Suket/identitas lain"
-                list3="Memilih mulai pukul 07.00-13.00 waktu setempat"
+                pertanyaan="Informasi Penggunaan Hak Pilih di TPS !!!"
+                gambar1="\assets\dok\1.Penggunaan Hak Pilih di TPS A3.png"
+                gambar2="\assets\dok\2.Penggunaan Hak Pilih di TPS A3.png"
             />
-            <Bertanya
-                pertanyaan="DPTB, DAFTAR PEMILIH TAMBAHAN (pindah memilih paling lambat H-7"
-                list1="Mendapat surat suara sesuai dapil"
-                list2="Membawa form A.5 dan KTP-el/ Suket/identitas lain"
-                list3="Memilih mulai pukul 07.00-13.00 waktu setempat"
-            />
-            <Bertanya
-                pertanyaan="DPK, DAFTAR PEMILIH KHUSUS (belum terdaftar)"
-                list1="Mendapat 5 surat suara (surat suara sisa)"
-                list2="Membawa KTP-el atau Suket dari 1214 Dukcapil"
-                list3="Memilih mulai pukul 12.00 - 13.00 waktu setempat di TPS sesuai alamat KTP-el/Suket"
-            />
+
             <Bertanya
                 pertanyaan="Berembe ruen surat suara sah dan tidak sah?"
                 list1=""

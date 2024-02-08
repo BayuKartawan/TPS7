@@ -10,9 +10,18 @@ const NavLarge = () => {
             </Link>
 
             <div className="w-layout-blockcontainer container-2 w-container">
-                <Link to="/galeri" className="ink-block w-inline-block"><div className="link">Galeri</div></Link>
-                <Link to="/anggota" className="ink-block w-inline-block"><div className="link">Anggota</div></Link>
-                <Link to="/dokumen" className="ink-block w-inline-block"><div className="link">Dokumen</div></Link>
+                <Link to="/" className="ink-block w-inline-block">
+                    <span className="link">Beranda</span>
+                </Link>
+                <Link to="/galeri" className="ink-block w-inline-block">
+                    <span className="link">Galeri</span>
+                </Link>
+                <Link to="/anggota" className="ink-block w-inline-block">
+                    <span className="link">Anggota</span>
+                </Link>
+                <Link to="/dokumen" className="ink-block w-inline-block">
+                    <span className="link">Dokumen</span>
+                </Link>
             </div>
         </section>
     )
