@@ -1,10 +1,15 @@
 // import CardGaleri from "../../component/CardGaleri"
+import TombolBack from "../../component/TombolBack"
 
 const GaleriHariH = () => {
     return (
         <div>
             <br />
             <br />
+
+            <TombolBack
+                menuju="/galeri"
+            />
 
             {/* hapus jika sudah ada file */}
             <div style={{

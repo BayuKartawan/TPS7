@@ -1,4 +1,6 @@
 import CardYt from "../../component/CardYt"
+import TombolBack from "../../component/TombolBack"
+
 import Safe from 'react-safe'
 import "./Vidio.css"
 
@@ -7,6 +9,11 @@ const Vidio = () => {
         <div>
             <br />
             <br />
+
+            <TombolBack
+                menuju="/galeri"
+            />
+
             <section className="container-card">
                 <div className="w-layout-grid grid">
 

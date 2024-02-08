@@ -1,4 +1,5 @@
 // import FileDownloader from "../pdf/FileDownloader"
+import TombolBack from '../../component/TombolBack';
 import Safe from 'react-safe'
 
 const Bimtek2 = () => {
@@ -6,6 +7,10 @@ const Bimtek2 = () => {
         <div>
             <br />
             <br />
+
+            <TombolBack
+                menuju="/dokumen"
+            />
 
             {/* hapus jika sudah ada file */}
             <div style={{

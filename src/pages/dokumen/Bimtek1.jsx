@@ -1,4 +1,5 @@
 import FileDownloader from "../pdf/FileDownloader"
+import TombolBack from "../../component/TombolBack"
 import Safe from 'react-safe'
 
 const Bimtek1 = () => {
@@ -6,6 +7,11 @@ const Bimtek1 = () => {
         <div>
             <br />
             <br />
+
+            <TombolBack
+                menuju="/dokumen"
+            />
+
             <section className="galeri">
                 <div className="w-layout-grid grid-galeri-list">
 

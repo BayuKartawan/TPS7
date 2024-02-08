@@ -1,10 +1,16 @@
 import CardGaleri from "../../component/CardGaleri"
+import TombolBack from "../../component/TombolBack"
 
 const IsiGaleri = () => {
     return (
         <div>
             <br />
             <br />
+
+            <TombolBack
+                menuju="/galeri"
+            />
+
             <section className="isi-galeri">
                 <div className="w-layout-grid">
 

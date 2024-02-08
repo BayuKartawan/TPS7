@@ -1,4 +1,5 @@
 import Tombol from "../../component/Tombol"
+import TombolBack from "../../component/TombolBack"
 import Safe from 'react-safe'
 
 const Anggota = () => {
@@ -6,6 +7,11 @@ const Anggota = () => {
         <div>
             <br />
             <br />
+
+            <TombolBack
+                menuju="/dokumen"
+            />
+
             <section className="galeri">
                 <div className="w-layout-grid grid-galeri-list">
 

@@ -1,4 +1,6 @@
 // import FileDownloader from "../pdf/FileDownloader"
+import TombolBack from '../../component/TombolBack';
+
 import Safe from 'react-safe'
 
 const BerkasP = () => {
@@ -6,6 +8,10 @@ const BerkasP = () => {
         <div>
             <br />
             <br />
+
+            <TombolBack
+                menuju="/dokumen"
+            />
 
             {/* hapus jika sudah ada file */}
             <div style={{

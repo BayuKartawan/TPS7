@@ -2262,7 +2262,7 @@ textarea.w-select {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    padding: 15px 20px;
+    padding: 20px 20px;
     display: flex;
     position: -webkit-sticky;
     position: sticky;
@@ -2393,6 +2393,32 @@ textarea.w-select {
     bottom: 10%;
     left: auto;
     right: 5%;
+    opacity: 80%;
+}
+
+.tombol-bk {
+    z-index: 90;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: auto;
+    bottom: 20%;
+    left: auto;
+    right: 5%;
+    opacity: 80%;
+}
+
+.tombol-bk:hover {
+    opacity: 100%;
+}
+
+.musik:hover {
+    opacity: 100%;
+}
+
+.tombol-musik {
+    background-color: #ffffff;
+    border-radius: 8px;
 }
 
 .container-card {
@@ -2555,8 +2581,7 @@ textarea.w-select {
         justify-content: center;
         align-items: center;
         display: flex;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 8px;
     }
 
     .active {
@@ -2604,8 +2629,15 @@ textarea.w-select {
     }
 
     .icon-nav {
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .bawah-icon-nav {
+        font-family: Montserrat, sans-serif;
+        font-weight: 600;
+        font-size: 10px;
+        color: #C21010;
     }
 
     .hitung {

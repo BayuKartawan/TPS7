@@ -1,11 +1,16 @@
 // import FileDownloader from "../pdf/FileDownloader"
 import Safe from 'react-safe'
+import TombolBack from '../../component/TombolBack';
 
 const BerkasHariH = () => {
     return (
         <div>
             <br />
             <br />
+
+            <TombolBack
+                menuju="/dokumen"
+            />
 
             {/* hapus jika sudah ada file */}
             <div style={{

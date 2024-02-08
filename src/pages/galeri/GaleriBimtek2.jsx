@@ -1,4 +1,5 @@
 // import CardGaleri from "../../component/CardGaleri"
+import TombolBack from "../../component/TombolBack"
 
 const GaleriBimtek2 = () => {
     return (
@@ -6,6 +7,9 @@ const GaleriBimtek2 = () => {
             <br />
             <br />
 
+            <TombolBack
+                menuju="/galeri"
+            />
             {/* hapus jika sudah ada file */}
             <div style={{
                 display: "flex",

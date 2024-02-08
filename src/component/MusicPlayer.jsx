@@ -44,14 +44,18 @@ const MusicPlayer = ({ source }) => {
     };
 
     return (
-        <div className="w-layout-blockcontainer musik w-container"><button onClick={togglePlayPause}>
-            {isPlaying ? (
-                <img src={pauseIcon} alt="Pause" style={{ width: '40px', height: '40px' }} />
-            ) : (
-                <img src={playIcon} alt="Play" style={{ width: '40px', height: '40px' }} />
-            )}
-        </button>
-            <audio ref={audioRef} src={source} /></div>
+        <div className="w-layout-blockcontainer musik w-container">
+            <button
+                className='tombol-musik'
+                onClick={togglePlayPause}>
+                {isPlaying ? (
+                    <img src={pauseIcon} alt="Pause" style={{ width: '35x', height: '35px' }} />
+                ) : (
+                    <img src={playIcon} alt="Play" style={{ width: '35px', height: '35px' }} />
+                )}
+            </button>
+            <audio ref={audioRef} src={source} />
+        </div>
 
     );
 };
