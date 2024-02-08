@@ -11,8 +11,6 @@ const Home = () => {
 
     const targetDate = '2024-02-14T00:00:00';
 
-
-
     // Fungsi untuk membagikan link ke WhatsApp
     const shareToWhatsApp = () => {
 
