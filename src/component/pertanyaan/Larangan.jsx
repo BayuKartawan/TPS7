@@ -18,7 +18,11 @@ const Bertanya = (pos) => {
 
             if (pos[listKey] || pos[gambarKey] || pos[altKey]) {
                 listItems.push(
-                    <li key={listKey} className='list'>
+                    <li
+                        key={listKey}
+                        className='list'
+                        data-aos="fade-up"
+                        data-aos-anchor-placement="center-bottom">
                         {pos[listKey] && pos[listKey]}
                         <br />
                         {pos[gambarKey] && (

@@ -4,7 +4,8 @@ import Safe from 'react-safe'
 
 const Anggota = () => {
     return (
-        <div>
+        <div data-aos="flip-left"
+            data-aos-anchor-placement="center-bottom">
             <br />
             <br />
             <section className="galeri">

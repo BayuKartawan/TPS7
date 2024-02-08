@@ -33,6 +33,18 @@ const BerkasP = () => {
                 <div className="w-layout-grid grid-galeri-list">
 
                     <FileDownloader
+                        filePath="https://drive.google.com/file/d/1QgK6ewWpMv6Cgsxn6Mci1_y8lQSCj4IF/view?usp=drive_link"
+                        fileName="1.Penggunaan Hak Pilih di TPS A3"
+                        buttonText="1.Penggunaan Hak Pilih di TPS A3"
+                    />
+
+                    <FileDownloader
+                        filePath="https://drive.google.com/file/d/1fa1D3pVJGq9bQZWOQeCuSd9fFtqTuH6q/view?usp=drive_link"
+                        fileName="2.Penggunaan Hak Pilih di TPS A3"
+                        buttonText="2.Penggunaan Hak Pilih di TPS A3"
+                    />
+
+                    <FileDownloader
                         filePath="https://drive.google.com/file/d/1Xc0wDDsaIeYP4qpbT_bqMaH8k8DvOYxo/view?usp=drive_link"
                         fileName="COVER BUKU PANDUAN KPPS PEMILU 2024"
                         buttonText="COVER BUKU PANDUAN KPPS PEMILU 2024"

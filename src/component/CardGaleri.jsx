@@ -29,7 +29,10 @@ const CardGaleri = (props) => {
     return (
         <div
             id="w-node-_77b48ea0-353a-601b-d9d5-28440378953c-c4b99cfa"
-            className="div-block-9">
+            className="div-block-9"
+            data-aos="flip-left"
+            data-aos-anchor-placement="center-bottom"
+        >
             <img
                 src={props.gambar}
                 loading="lazy"

@@ -2,12 +2,19 @@ import PropTypes from 'prop-types';
 
 const CardAnggota = (props) => {
     return (
-        <div id="w-node-e20d8371-3017-f059-0577-5fedb2b2dcd9-c4b99cfa" className="div-block-6">
-            <img
+        <div
+            id="w-node-e20d8371-3017-f059-0577-5fedb2b2dcd9-c4b99cfa"
+            className="div-block-6 "
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            data-aos-anchor-placement="center-bottom"
+        >
+            < img
                 src={props.gambar}
                 loading="lazy"
                 sizes="(max-width: 479px) 100vw, 400px"
-                srcSet={`${props.gambar} 500w, ${props.gambar} 800w, ${props.gambar} 1080w, ${props.gambar} 1600w`}
+                srcSet={`${props.gambar} 500w, ${props.gambar} 800w, ${props.gambar} 1080w, ${props.gambar} 1600w`
+                }
                 className="image-2" />
 
             <div className="div-block-8">
@@ -44,7 +51,7 @@ const CardAnggota = (props) => {
 
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 

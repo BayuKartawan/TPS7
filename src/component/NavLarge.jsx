@@ -2,7 +2,10 @@ import { Link } from "react-router-dom";
 
 const NavLarge = () => {
     return (
-        <section className="nav-large">
+        <section
+            data-aos="fade-down"
+            data-aos-anchor-placement="center-bottom"
+            className="nav-large">
             <Link to="/" className="link-block-2 w-inline-block"><img
                 src="/assets/kpu.png"
                 loading="lazy" width="40" alt="" />

@@ -1,6 +1,9 @@
 const HeaderGbr = () => {
     return (
-        <section className="h-gbr">
+        <section
+            data-aos="fade-down"
+            data-aos-anchor-placement="center-bottom"
+            className="h-gbr">
             <div className="w-layout-blockcontainer container-3 w-container">
                 <img
                     src="/pelantikan/pelantikan9.jpg"

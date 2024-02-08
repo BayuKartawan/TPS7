@@ -44,6 +44,8 @@ const Home = () => {
 
             {/* lokasi */}
             <div
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
                 style={{ display: "flex", justifyContent: "center" }}>
                 <h3
                     className="judul-lokasi"
@@ -53,7 +55,10 @@ const Home = () => {
                     }}>Lokasi TPS 07 Desa Sikur Barat🗺️</h3>
             </div>
             {/* map */}
-            <div style={{ width: '100%', maxWidth: "900px", marginRight: "auto", marginLeft: "auto", display: "flex", gridColumn: "50px" }}>
+            <div
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+                style={{ width: '100%', maxWidth: "900px", marginRight: "auto", marginLeft: "auto", display: "flex", gridColumn: "50px" }}>
                 <iframe
                     width="100%"
                     height="500"
@@ -69,6 +74,8 @@ const Home = () => {
             </div>
             {/* share lokasi */}
             <div
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
                 style={{
                     display: "flex",
                     justifyContent: "center",
@@ -136,6 +143,7 @@ const Home = () => {
                 pertanyaan="Informasi Penggunaan Hak Pilih di TPS !!!"
                 gambar1="\assets\dok\1.Penggunaan Hak Pilih di TPS A3.png"
                 gambar2="\assets\dok\2.Penggunaan Hak Pilih di TPS A3.png"
+                list3="download gambar lebih jelas di dokumen pendukung"
             />
 
             <Bertanya
@@ -205,7 +213,10 @@ const Home = () => {
                     marginTop: "120px"
                 }} />
 
-            <div className="footer">
+            <div
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+                className="footer">
                 <div className="blok1">
                     <div className="teks-judul-f">Design with 💖 by Bayu Kartawan</div>
                     <div className="teks-judul-f-copy">© 2024 All Rights Reserved <br />TPS 7 Desa Sikur Barat</div>

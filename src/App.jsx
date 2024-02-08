@@ -3,6 +3,8 @@ import NavLarge from "./component/NavLarge";
 import NavHp from "./component/NavHp"
 import JudulHp from "./component/JudulHp"
 import MusicPlayer from "./component/MusicPlayer"
+import PreLoader from "./component/loader/PreLoader";
+import ScrollTop from "./component/ScrollTop";
 // halaman
 import Home from './pages/Home'
 import Anggota from "./pages/Anggota";
@@ -32,6 +34,8 @@ function App() {
   return (
     <Router>
       <div>
+        <ScrollTop />
+        <PreLoader />
         <NavLarge />
         <NavHp />
         <JudulHp />

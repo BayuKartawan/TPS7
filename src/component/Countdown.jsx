@@ -42,7 +42,9 @@ const Countdown = ({ targetDate }) => {
     }, [calculateTimeRemaining]);
 
     return (
-        <div className="w-layout-blockcontainer hitung w-container">
+        <div data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            className="w-layout-blockcontainer hitung w-container">
             <div className="div-block-5">
                 <div className="text-block-5">⏱️Hitung Mundur Menuju<br />📌14 Februari 2024📌</div>
             </div>
