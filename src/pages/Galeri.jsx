@@ -11,7 +11,7 @@ const Anggota = () => {
 
                     <Tombol
                         gambar="/assets/kpu.png"
-                        nama="Pelantikan"
+                        nama="Nanam pohon"
                         link="/galeri/pelantikan"
                     // tStyle={{ borderColor: 'red' }}
                     />
@@ -24,8 +24,8 @@ const Anggota = () => {
 
                     <Tombol
                         gambar="/assets/kpu.png"
-                        nama="Bimtek 2"
-                        link="/galeri/bimtek2"
+                        nama="Pembagian surat undangan"
+                        link="/galeri/surat-undangan"
                     />
 
                     <Tombol

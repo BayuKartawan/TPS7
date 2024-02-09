@@ -1,7 +1,7 @@
 // import CardGaleri from "../../component/CardGaleri"
 import TombolBack from "../../component/TombolBack"
 
-const GaleriBimtek2 = () => {
+const SuratUndangan = () => {
     return (
         <div>
             <br />
@@ -50,4 +50,4 @@ n
     )
 }
 
-export default GaleriBimtek2
+export default SuratUndangan

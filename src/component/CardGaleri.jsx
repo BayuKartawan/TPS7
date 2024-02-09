@@ -31,6 +31,7 @@ const CardGaleri = (props) => {
             id="w-node-_77b48ea0-353a-601b-d9d5-28440378953c-c4b99cfa"
             className="div-block-9"
             data-aos="flip-left"
+            data-aos-duration="1000"
             data-aos-anchor-placement="center-bottom"
         >
             <img

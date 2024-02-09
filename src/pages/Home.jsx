@@ -120,7 +120,7 @@ const Home = () => {
 
             <Bertanya
                 pertanyaan="Ape te jauk jok TPS?"
-                list1="Formulir C-6 Pemberitahuan (Surat Undangan)"
+                list1="Formulir C.Pemberitahuan-KPU (Surat Undangan), Contoh (yang resmi saat di bagikan KPPS):"
                 gambar1="https://rumahpemilu.org/wp-content/uploads/2017/04/C6.jpg"
                 alt1="Formulir C-6 Pemberitahuan (Surat Undangan)"
                 list2="KTP-elektronik asli"
