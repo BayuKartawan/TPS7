@@ -44,8 +44,6 @@ const Home = () => {
 
             {/* lokasi */}
             <div
-                data-aos="fade-up"
-                data-aos-anchor-placement="center-bottom"
                 style={{ display: "flex", justifyContent: "center" }}>
                 <h3
                     className="judul-lokasi"
@@ -74,8 +72,6 @@ const Home = () => {
             </div>
             {/* share lokasi */}
             <div
-                data-aos="fade-up"
-                data-aos-anchor-placement="center-bottom"
                 style={{
                     display: "flex",
                     justifyContent: "center",
@@ -215,6 +211,7 @@ const Home = () => {
 
             <div
                 data-aos="fade-up"
+                data-aos-duration="1000"
                 data-aos-anchor-placement="center-bottom"
                 className="footer">
                 <div className="blok1">

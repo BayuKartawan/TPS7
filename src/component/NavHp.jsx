@@ -2,10 +2,7 @@ import { NavLink } from "react-router-dom"
 
 const NavHp = () => {
     return (
-        <section
-            data-aos="fade-up"
-            data-aos-anchor-placement="center-bottom"
-            className="nav-mobile">
+        <section className="nav-mobile">
             <NavLink
                 to="/"
                 href="#"
