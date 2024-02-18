@@ -69,7 +69,29 @@ const BerkasP = () => {
                         buttonText="Surat suara sah tidak sah F4_(Greyscale)"
                     />
 
+                    <FileDownloader
+                        filePath="\assets\dok\SAMBUTAN KETUA KPPS.docx"
+                        fileName="SAMBUTAN KETUA KPPS"
+                        buttonText="SAMBUTAN KETUA KPPS"
+                    />
 
+                    <FileDownloader
+                        filePath="\assets\dok\[1x1] larangan baru.pdf"
+                        fileName="DESAIN BANNER LARANGAN"
+                        buttonText="DESAIN BANNER LARANGAN"
+                    />
+
+                    <FileDownloader
+                        filePath="\assets\dok\[2x1] selamat datang TPS 7.pdf"
+                        fileName="BANNER [2x1] selamat datang TPS 7"
+                        buttonText="BANNER [2x1] selamat datang TPS 7"
+                    />
+
+                    <FileDownloader
+                        filePath="\assets\dok\Kpps 7.pdf"
+                        fileName="Template papan nama"
+                        buttonText="Template papan nama"
+                    />
 
                 </div>
             </section>

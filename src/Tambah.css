@@ -288,7 +288,6 @@ html.w-mod-touch * {
 }
 
 .w-inline-block {
-    max-width: 100%;
     display: inline-block;
     text-decoration: none;
 }
@@ -2256,13 +2255,15 @@ textarea.w-select {
 }
 
 .nav-large {
+    height: 70px;
     z-index: 100;
     background-color: #c21010;
     border-bottom: 2px solid #fff;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    padding: 20px 20px;
+    padding-left: 20px;
+    padding-right: 15px;
     display: flex;
     position: -webkit-sticky;
     position: sticky;
@@ -2271,22 +2272,35 @@ textarea.w-select {
 
 .container-2 {
     max-width: none;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    /* grid-column-gap: 10px; */
+    /* grid-row-gap: 20px; */
     flex: 1;
     justify-content: flex-end;
     align-items: center;
+    align-self: stretch;
     display: flex;
 }
 
 .link {
-    color: #fff;
     font-family: Montserrat, sans-serif;
     font-weight: 500;
 }
 
 .link-block {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
     text-decoration: none;
+    color: #ffe3e3;
+}
+
+.link-block:hover {
+    border-bottom: 5px solid yellowgreen;
+    color: white;
 }
 
 .link-block-2 {
@@ -2295,6 +2309,8 @@ textarea.w-select {
     align-items: center;
     text-decoration: none;
     display: flex;
+    align-self: stretch;
+    color: white;
 }
 
 .h-gbr {
@@ -2351,6 +2367,7 @@ textarea.w-select {
     font-size: 24px;
     font-weight: 900;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .column-2 {
@@ -2382,6 +2399,12 @@ textarea.w-select {
     font-weight: 600;
     display: flex;
     margin-bottom: 10px;
+    flex-direction: column;
+}
+
+.teks-waktu {
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
 
 .musik {
@@ -2547,6 +2570,11 @@ textarea.w-select {
 }
 
 @media screen and (max-width: 767px) {
+    .teks-waktu {
+        margin-top: 8px;
+        margin-bottom: 0px;
+    }
+
     .nav-large {
         display: none;
     }

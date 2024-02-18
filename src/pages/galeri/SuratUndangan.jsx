@@ -1,5 +1,6 @@
-// import CardGaleri from "../../component/CardGaleri"
+import CardGaleri from "../../component/CardGaleri"
 import TombolBack from "../../component/TombolBack"
+import CardYt from "../../component/CardYt"
 
 const SuratUndangan = () => {
     return (
@@ -11,7 +12,7 @@ const SuratUndangan = () => {
                 menuju="/galeri"
             />
             {/* hapus jika sudah ada file */}
-            <div style={{
+            {/* <div style={{
                 display: "flex",
                 justifyContent: "center"
             }}>
@@ -24,22 +25,62 @@ const SuratUndangan = () => {
                     fontFamily: "Montserrat, sans-serif",
                     borderRadius: "10px"
                 }}>Gambar Masi Kosong ....</span>
-            </div>
+            </div> */}
 
             <section className="isi-galeri">
                 <div className="w-layout-grid">
 
-                    {/* <CardGaleri
-                        gambar="\bimtek1\bt1-1.jpg"
-                    />
-n
                     <CardGaleri
-                        gambar="\bimtek1\bt1-2.jpg"
+                        gambar="\undangan\suratc-1.jpg"
                     />
 
                     <CardGaleri
-                        gambar="\bimtek1\bt1-3.jpg"
-                    /> */}
+                        gambar="\undangan\suratc-2.jpg"
+                    />
+
+                    <CardGaleri
+                        gambar="\undangan\suratc-3.jpg"
+                    />
+
+                    <CardGaleri
+                        gambar="\undangan\suratc-4.jpg"
+                    />
+
+                    <CardGaleri
+                        gambar="\undangan\suratc-5.jpg"
+                    />
+
+                    <CardGaleri
+                        gambar="\undangan\suratc-6.jpg"
+                    />
+
+                    <CardGaleri
+                        gambar="\undangan\suratc-7.jpg"
+                    />
+
+                    <CardGaleri
+                        gambar="\undangan\suratc-8.jpg"
+                    />
+
+                    <CardGaleri
+                        gambar="\undangan\suratc-9.jpg"
+                    />
+
+                    <CardYt
+                        idVidio="Fab-dx_kyWk"
+                        title="penulisan c undangan untuk DPT"
+                        deskripsi="penulisan c undangan untuk DPT"
+                    />
+
+                    <CardGaleri
+                        gambar="\undangan\suratc-10.jpg"
+                    />
+
+                    <CardGaleri
+                        gambar="\undangan\suratc-11.jpg"
+                    />
+
+
 
                 </div>
             </section>

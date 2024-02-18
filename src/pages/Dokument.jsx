@@ -51,6 +51,12 @@ const Anggota = () => {
                         link="/dokumen/berkas-pendukung"
                     />
 
+                    <FileDownloader
+                        filePath="https://drive.google.com/drive/folders/1csae9hbC_0m9vH0ArHAuzAiKPGu4sFMd?usp=sharing"
+                        fileName="c hasil salinan"
+                        buttonText="C hasil salinan TPS 7"
+                    />
+
 
                 </div>
             </section>

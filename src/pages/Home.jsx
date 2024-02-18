@@ -9,7 +9,8 @@ import "./footer.css"
 
 const Home = () => {
 
-    const targetDate = '2024-02-14T00:00:00';
+    // BUKA DI BAWAH JIKA MAU HITUNG MUNDUR 
+    // const targetDate = '2024-02-14T00:00:00';
 
     // Fungsi untuk membagikan link ke WhatsApp
     const shareToWhatsApp = () => {
@@ -40,7 +41,8 @@ const Home = () => {
     return (
         <div>
             <HeaderGbr />
-            <CountDown targetDate={targetDate} />
+            {/* TAMBAHKAN  targetDate={targetDate} JIKA MAU HITUNG MUNDUR*/}
+            <CountDown />
 
             {/* lokasi */}
             <div

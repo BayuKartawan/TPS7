@@ -24,6 +24,12 @@ const Anggota = () => {
 
                     <Tombol
                         gambar="/assets/kpu.png"
+                        nama="Hari tenang"
+                        link="/galeri/hari-tenang"
+                    />
+
+                    <Tombol
+                        gambar="/assets/kpu.png"
                         nama="Pembagian surat undangan"
                         link="/galeri/surat-undangan"
                     />
@@ -46,7 +52,11 @@ const Anggota = () => {
                         link="/galeri/vidio"
                     />
 
-
+                    <Tombol
+                        gambar="/assets/kpu.png"
+                        nama="Desain banner"
+                        link="/galeri/desain"
+                    />
 
                 </div>
             </section>

@@ -20,9 +20,17 @@ const MusicPlayer = ({ source }) => {
             });
             isPageReloaded.current = false;
         }
+        audio.play().catch(error => {
+            console.error('Autoplay error:', error);
+        });
+
+
+        // Menambahkan event listener untuk event 'ended'
+        audio.addEventListener('ended', handleMusicEnd);
 
         return () => {
             // Hentikan pemutaran musik saat komponen dibongkar
+            audio.removeEventListener('ended', handleMusicEnd);
             audio.pause();
             audio.currentTime = 0;
         };
@@ -41,6 +49,12 @@ const MusicPlayer = ({ source }) => {
 
     const togglePlayPause = () => {
         setIsPlaying(!isPlaying);
+    };
+
+    const handleMusicEnd = () => {
+        // Memulai ulang pemutaran musik dari awal ketika musik selesai diputar
+        audioRef.current.currentTime = 0;
+        audioRef.current.play();
     };
 
     return (

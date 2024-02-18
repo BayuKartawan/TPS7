@@ -1,22 +1,59 @@
-import { useState, useEffect, useCallback } from 'react';
-import PropTypes from 'prop-types';
+import { useState, useEffect } from 'react'; // jika mau aktifkan hitung mundur tambahkan,  useCallback
+// BUKA DI BAWAH JIKA MAU HITUNG MUNDUR 
+// import PropTypes from 'prop-types'; 
 
-const Countdown = ({ targetDate }) => {
-    const calculateTimeRemaining = useCallback(() => {
+// jika mau aktifkan hitung mundur tambahkan, props targetDate
+const Countdown = () => {
+
+    // LOGIKA HITUNG MUNDUR ----------
+
+    // const calculateTimeRemaining = useCallback(() => {
+    //     const now = new Date();
+    //     const targetTime = targetDate ? new Date(targetDate) : now;
+
+    //     const timeDifference = targetTime - now;
+
+    //     if (timeDifference <= 0) {
+    //         // Countdown selesai
+    //         return {
+    //             days: 0,
+    //             hours: 0,
+    //             minutes: 0,
+    //             seconds: 0,
+    //         };
+    //     }
+
+    //     const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    //     const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    //     const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+    //     const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+    //     return {
+    //         days,
+    //         hours,
+    //         minutes,
+    //         seconds,
+    //     };
+    // }, [targetDate]);
+
+    // const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining);
+
+    // useEffect(() => {
+    //     const timer = setInterval(() => {
+    //         setTimeRemaining(calculateTimeRemaining);
+    //     }, 1000);
+
+    //     return () => clearInterval(timer);
+    // }, [calculateTimeRemaining]);
+
+
+    // LOGIKA HITUNG MAJU
+
+    const calculateTimeRemaining = () => {
         const now = new Date();
-        const targetTime = targetDate ? new Date(targetDate) : now;
+        const targetDate = new Date("2024-02-14T23:59:59");
 
-        const timeDifference = targetTime - now;
-
-        if (timeDifference <= 0) {
-            // Countdown selesai
-            return {
-                days: 0,
-                hours: 0,
-                minutes: 0,
-                seconds: 0,
-            };
-        }
+        const timeDifference = now - targetDate;
 
         const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
         const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -29,22 +66,24 @@ const Countdown = ({ targetDate }) => {
             minutes,
             seconds,
         };
-    }, [targetDate]);
+    };
 
-    const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining);
+    const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
 
     useEffect(() => {
         const timer = setInterval(() => {
-            setTimeRemaining(calculateTimeRemaining);
+            setTimeRemaining(calculateTimeRemaining());
         }, 1000);
 
         return () => clearInterval(timer);
-    }, [calculateTimeRemaining]);
+    }, []);
 
     return (
         <div className="w-layout-blockcontainer hitung w-container">
             <div className="div-block-5">
-                <div className="text-block-5">⏱️Hitung Mundur Menuju<br />📌14 Februari 2024📌</div>
+                <div className="text-block-5">
+                    <span >⏱️Kenangan TPS 07 Penyenggir</span>
+                    <span className='teks-waktu'>14 Februari 2024 yang lalu</span></div>
             </div>
             <div className="columns w-row">
                 <div className="column w-col w-col-3">
@@ -92,8 +131,9 @@ const Countdown = ({ targetDate }) => {
     );
 };
 
-Countdown.propTypes = {
-    targetDate: PropTypes.string.isRequired,
-};
+// BUKA DI BAWAH JIKA MAU HITUNG MUNDUR 
+// Countdown.propTypes = {
+//     targetDate: PropTypes.string.isRequired,
+// };
 
 export default Countdown;
