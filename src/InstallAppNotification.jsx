@@ -42,13 +42,15 @@ const InstallAppNotification = () => {
   };
 
   return (
-    <div style={{ display: showModal && !appInstalled ? 'block' : 'none' }}>
-      <div className="install-app-notification">
-        <div className="modal-content">
-          <p>Install aplikasi ini di perangkat Anda untuk pengalaman terbaik! <button onClick={handleInstall}>Install</button></p>
-          <button style={{ backgroundColor: "red", marginBottom: "10px" }} onClick={handleClose}>Close</button> {/* Tombol Close */}
+    <div>
+      {showModal && !appInstalled && (
+        <div className="install-app-notification">
+          <div className="modal-content">
+            <p>Install aplikasi ini di perangkat Anda untuk pengalaman terbaik! <button onClick={handleInstall}>Install</button></p>
+            <button style={{ backgroundColor: "red", marginBottom: "10px" }} onClick={handleClose}>Close</button> {/* Tombol Close */}
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };
