@@ -1,6 +1,7 @@
 
 import HeaderGbr from "../component/HeaderGbr"
 import CountDown from "../component/Countdown"
+import InstallAppNotification from '../InstallAppNotification'; // Import komponen yang telah diperbarui
 // component pertanyaan
 import Bertanya from "../component/pertanyaan/Bertanya"
 import Larangan from "../component/pertanyaan/Larangan"
@@ -58,8 +59,18 @@ const Home = () => {
             <div
                 data-aos="fade-up"
                 data-aos-anchor-placement="center-bottom"
-                style={{ width: '100%', maxWidth: "900px", marginRight: "auto", marginLeft: "auto", display: "flex", gridColumn: "50px" }}>
+                style={{ 
+                    width: '100%',
+                    maxWidth: "900px", 
+                    marginRight: "auto", 
+                    marginLeft: "auto", 
+                    display: "flex", 
+                    gridColumn: "50px",
+                }}>
                 <iframe
+                style={{
+                    borderRadius:"10px"
+                }}
                     width="100%"
                     height="500"
                     frameBorder="0"
@@ -83,16 +94,6 @@ const Home = () => {
 
                 <button
                     className="share-wa"
-                    style={{
-                        fontFamily: "Montserrat, sans-serif",
-                        textAlign: "center",
-                        marginLeft: "10px",
-                        marginRight: "10px",
-                        padding: "10px",
-                        border: "1px solid #630b0b",
-                        borderRadius: "10px",
-                        boxShadow: "0px 5px 15px rgba(44, 44, 44, 0.126)"
-                    }}
                     onClick={handleButtonClick} // Menambahkan event handler untuk klik tombol
                 >
                     Tekan untuk membagikan lokasi dan undangan ke TPS 07 Desa Sikur Barat 📤
@@ -205,12 +206,6 @@ const Home = () => {
                 list28="Tidak Sah"
             />
 
-            <hr
-                style={{
-                    color: "red",
-                    marginTop: "120px"
-                }} />
-
             <div
                 data-aos="fade-up"
                 data-aos-duration="1000"
@@ -231,7 +226,8 @@ const Home = () => {
                 </div>
             </div>
 
-            <br /><br /><br /><br /><br /><br /><br />
+            <InstallAppNotification/>
+
         </div>
 
     )

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 const InstallAppNotification = () => {
   const [deferredPrompt, setDeferredPrompt] = useState(null);
-  const [showNotification, setShowNotification] = useState(false);
+  const [setShowNotification] = useState(false);
 
   useEffect(() => {
     const handleBeforeInstallPrompt = (event) => {
@@ -29,11 +29,10 @@ const InstallAppNotification = () => {
         }
       });
     }
-    setShowNotification(false); // Hide the custom install notification regardless of user choice
   };
 
   return (
-    <div className={`install-app-notification${showNotification ? ' show' : ''}`}>
+    <div className="install-app-notification">
       <div className="modal-content">
         <p>Install aplikasi ini di perangkat Anda untuk pengalaman terbaik! <button onClick={handleInstall}>Install</button></p>
       </div>

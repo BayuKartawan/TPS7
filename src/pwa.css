@@ -1,17 +1,18 @@
 .install-app-notification {
-  display: none; /* Secara default, sembunyikan notifikasi */
   background-color: #fff;
   padding: 10px;
+  padding-top: 30px;
   font-family: Montserrat, sans-serif;
+  padding-bottom: 100px;
 }
 
-.install-app-notification .modal-content {
+.modal-content {
   text-align: center;
 }
 
-.install-app-notification .modal-content button {
+.modal-content button {
   padding: 5px 20px;
-  margin-left: 5px;
+  margin-left: 10px;
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -19,7 +20,7 @@
   cursor: pointer;
 }
 
-.install-app-notification .modal-content button:hover {
+.modal-content button:hover {
   background-color: #0056b3;
 }
 
@@ -27,6 +28,5 @@
 @media screen and (max-width: 768px) {
   .install-app-notification {
     padding-top: 10px;
-    padding-bottom: 0px;
   }
 }

@@ -498,9 +498,20 @@ ol {
     padding-left: 0;
     list-style: none;
 }
+.share-wa{
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(44, 44, 44, 0.126);
+    background-color: white;    
+}
 
 .share-wa:hover {
     background-color: red;
+    border: 1px solid #630b0b;
     transition: 0.4s;
     color: white;
 }
