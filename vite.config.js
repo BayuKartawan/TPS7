@@ -5,8 +5,8 @@ const manifestForPlugin = {
   registerType:'prompt',
   includeAssests:['favicon.ico', "apple-touc-icon.png", "masked-icon.svg"],
   manifest:{
-    name:"React-vite-app",
-    short_name:"react-vite-app",
+    name:"TPS 07 DSB",
+    short_name:"TPS 07 DSB",
     description:"I am a simple vite app",
     icons:[{
       src: '/assets/kpu.png',
