@@ -1,47 +1,36 @@
 .install-app-notification {
-    display: none;
-    /* position: fixed; */
-    /* top: 50%;
-    left: 50%; */
-    /* transform: translate(-50%, -50%); */
-    background-color: #fff;
-    padding: 10px;
-    /*border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 1000; */
-    font-family: Montserrat, sans-serif;
+  display: block; /* Secara default, tampilkan notifikasi */
+  background-color: #fff;
+  padding: 10px;
+  font-family: Montserrat, sans-serif;
+}
+
+.install-app-notification.hidden {
+  display: none; /* Sembunyikan notifikasi jika aplikasi sudah terinstal */
+}
+
+.modal-content {
+  text-align: center;
+}
+
+.modal-content button {
+  padding: 5px 20px;
+  margin-left: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #0056b3;
+}
+
+/* Media query untuk responsivitas */
+@media screen and (max-width: 768px) {
+  .install-app-notification {
+    padding-top: 10px;
+    padding-bottom: 0px;
   }
-  
-  .install-app-notification.show {
-    display: block;
-  }
-  
-  .modal-content {
-    text-align: center;
-  }
-  
-  
-  .modal-content button {
-    padding: 5px 20px;
-    margin-left: 5px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .modal-content button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Media query untuk responsif */
-  @media screen and (max-width: 768px) {
-    .install-app-notification {
-      /* width: 80%;
-      max-width: 300px; */
-      padding-top: 10px;
-      padding-bottom: 0px;
-    }
-  }
-  
+}
