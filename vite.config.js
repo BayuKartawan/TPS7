@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
-import InstallAppNotification from './InstallAppNotification.jsx'; // Import komponen yang telah diperbarui
 
 const manifestForPlugin = {
   registerType: 'prompt',

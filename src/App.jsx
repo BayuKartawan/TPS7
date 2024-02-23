@@ -5,6 +5,7 @@ import JudulHp from "./component/JudulHp"
 import MusicPlayer from "./component/MusicPlayer"
 import PreLoader from "./component/loader/PreLoader";
 import ScrollTop from "./component/ScrollTop";
+import InstallAppNotification from './InstallAppNotification.jsx'; // Import komponen yang telah diperbarui
 // halaman
 import Home from './pages/Home'
 import Anggota from "./pages/Anggota";
@@ -36,6 +37,7 @@ function App() {
   return (
     <Router>
       <div>
+        <InstallAppNotification/>
         <ScrollTop />
         <PreLoader />
         <NavLarge />
