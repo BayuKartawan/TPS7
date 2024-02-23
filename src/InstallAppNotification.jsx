@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 const InstallAppNotification = () => {
   const [deferredPrompt, setDeferredPrompt] = useState(null);
   const [appInstalled, setAppInstalled] = useState(false);
-  const [showModal, setShowModal] = useState(true);
 
   useEffect(() => {
     const handleBeforeInstallPrompt = (event) => {
@@ -28,24 +27,17 @@ const InstallAppNotification = () => {
         if (choiceResult.outcome === 'accepted') {
           console.log('User accepted the install prompt');
           setAppInstalled(true); // Set appInstalled to true when user accepts installation
-          setShowModal(false); // Hide the custom install prompt
         } else {
           console.log('User dismissed the install prompt');
-          setShowModal(false); // Hide the custom install prompt
         }
       });
     }
   };
 
-  const handleClose = () => {
-    setShowModal(false); // Close the custom install prompt
-  };
-
   return (
-    <div className={`install-app-notification${showModal && !appInstalled ? ' show' : ''}`}>
+    <div className={`install-app-notification${appInstalled ? ' hidden' : ''}`}>
       <div className="modal-content">
         <p>Install aplikasi ini di perangkat Anda untuk pengalaman terbaik! <button onClick={handleInstall}>Install</button></p>
-        <button style={{ backgroundColor: "red", marginBottom: "10px" }} onClick={handleClose}>Close</button> {/* Tombol Close */}
       </div>
     </div>
   );
