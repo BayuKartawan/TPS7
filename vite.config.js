@@ -1,7 +1,7 @@
-import { useState } from 'react';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
+import InstallAppNotification from './InstallAppNotification.jsx'; // Import komponen yang telah diperbarui
 
 const manifestForPlugin = {
   registerType: 'prompt',
@@ -45,25 +45,6 @@ const manifestForPlugin = {
   }
 };
 
-const InstallAppNotification = () => {
-  const [showModal, setShowModal] = useState(true);
-
-  const handleInstall = () => {
-    // Logic untuk memicu prompt instalasi aplikasi
-    setShowModal(false); // Sembunyikan modal setelah pengguna mengklik tombol install
-  };
-
-  return (
-    <div className={`install-app-notification${showModal ? ' show' : ''}`}>
-      <div className="modal-content">
-        <p>Install aplikasi ini di perangkat Anda untuk pengalaman terbaik!</p>
-        <button onClick={handleInstall}>Install</button>
-      </div>
-    </div>
-  );
-};
-
 export default defineConfig({
   plugins: [react(), VitePWA(manifestForPlugin)],
 });
-
