@@ -33,7 +33,7 @@ const InstallAppNotification = () => {
   };
 
   return (
-    <div style={{ display: showNotification ? 'block' : 'none' }}>
+    <div className={`install-app-notification${showNotification ? ' show' : ''}`}>
       <div className="modal-content">
         <p>Install aplikasi ini di perangkat Anda untuk pengalaman terbaik! <button onClick={handleInstall}>Install</button></p>
       </div>

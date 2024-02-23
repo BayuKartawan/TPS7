@@ -5,11 +5,11 @@
   font-family: Montserrat, sans-serif;
 }
 
-.modal-content {
+.install-app-notification .modal-content {
   text-align: center;
 }
 
-.modal-content button {
+.install-app-notification .modal-content button {
   padding: 5px 20px;
   margin-left: 5px;
   background-color: #007bff;
@@ -19,7 +19,7 @@
   cursor: pointer;
 }
 
-.modal-content button:hover {
+.install-app-notification .modal-content button:hover {
   background-color: #0056b3;
 }
 
