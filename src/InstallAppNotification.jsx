@@ -3,12 +3,15 @@ import { useState, useEffect } from 'react';
 const InstallAppNotification = () => {
   const [showModal, setShowModal] = useState(true);
   const [deferredPrompt, setDeferredPrompt] = useState(null);
+  const [appInstalled, setAppInstalled] = useState(false);
 
   useEffect(() => {
     const handleBeforeInstallPrompt = (event) => {
       event.preventDefault(); // Prevent the default browser prompt
       setDeferredPrompt(event); // Store the event for later use
-      setShowModal(true); // Show the custom install prompt
+      if (!appInstalled) {
+        setShowModal(true); // Show the custom install prompt only if app is not installed
+      }
     };
 
     window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
@@ -16,7 +19,7 @@ const InstallAppNotification = () => {
     return () => {
       window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
     };
-  }, []); // Run effect only once on component mount
+  }, [appInstalled]); // Re-run effect when appInstalled state changes
 
   const handleInstall = () => {
     if (deferredPrompt) {
@@ -24,6 +27,7 @@ const InstallAppNotification = () => {
       deferredPrompt.userChoice.then((choiceResult) => {
         if (choiceResult.outcome === 'accepted') {
           console.log('User accepted the install prompt');
+          setAppInstalled(true); // Set appInstalled to true when user accepts installation
           setShowModal(false); // Hide the custom install prompt
         } else {
           console.log('User dismissed the install prompt');
@@ -38,12 +42,10 @@ const InstallAppNotification = () => {
   };
 
   return (
-    <div className={`install-app-notification${showModal ? ' show' : ''}`}>
+    <div className={`install-app-notification${showModal ? ' show' : ''}`} style={{ display: appInstalled ? 'none' : 'block' }}>
       <div className="modal-content">
         <p>Install aplikasi ini di perangkat Anda untuk pengalaman terbaik! <button onClick={handleInstall}>Install</button></p>
-        <button style={{
-          backgroundColor:"red", marginBottom:"10px"
-        }} onClick={handleClose}>Close</button> {/* Tombol Close */}
+        <button style={{ backgroundColor: "red", marginBottom: "10px" }} onClick={handleClose}>Close</button> {/* Tombol Close */}
       </div>
     </div>
   );
