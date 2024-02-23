@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 
 const InstallAppNotification = () => {
-  const [showModal, setShowModal] = useState(true);
   const [deferredPrompt, setDeferredPrompt] = useState(null);
   const [appInstalled, setAppInstalled] = useState(false);
+  const [showModal, setShowModal] = useState(true);
 
   useEffect(() => {
     const handleBeforeInstallPrompt = (event) => {
@@ -42,7 +42,7 @@ const InstallAppNotification = () => {
   };
 
   return (
-    <div className={`install-app-notification${showModal ? ' show' : ''}`} style={{ display: appInstalled ? 'none' : 'block' }}>
+    <div className={`install-app-notification${showModal && !appInstalled ? ' show' : ''}`}>
       <div className="modal-content">
         <p>Install aplikasi ini di perangkat Anda untuk pengalaman terbaik! <button onClick={handleInstall}>Install</button></p>
         <button style={{ backgroundColor: "red", marginBottom: "10px" }} onClick={handleClose}>Close</button> {/* Tombol Close */}
