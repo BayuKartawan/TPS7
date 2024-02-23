@@ -1,12 +1,8 @@
 .install-app-notification {
-  display: block; /* Secara default, tampilkan notifikasi */
+  display: none; /* Secara default, sembunyikan notifikasi */
   background-color: #fff;
   padding: 10px;
   font-family: Montserrat, sans-serif;
-}
-
-.install-app-notification.hidden {
-  display: none; /* Sembunyikan notifikasi jika aplikasi sudah terinstal */
 }
 
 .modal-content {
