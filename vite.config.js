@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
-import './src/pwa.css'; 
 
 const manifestForPlugin = {
   registerType: 'prompt',
