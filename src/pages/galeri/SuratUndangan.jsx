@@ -81,6 +81,14 @@ const SuratUndangan = () => {
                     />
 
 
+                    <CardGaleri
+                        gambar="\undangan\suratc-12.jpg"
+                    />
+
+
+                    <CardGaleri
+                        gambar="\undangan\suratc-13.jpg"
+                    />
 
                 </div>
             </section>
