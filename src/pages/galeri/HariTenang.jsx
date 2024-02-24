@@ -67,11 +67,11 @@ const HariTenang = () => {
                         gambar="\hariTenang\harit-9.jpg"
                     />
 
-<CardGaleri
+                    <CardGaleri
                         gambar="\hariTenang\harit-10.jpg"
                     />
 
-<CardGaleri
+                    <CardGaleri
                         gambar="\hariTenang\harit-11.jpg"
                     />
 
