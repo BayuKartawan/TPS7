@@ -64,7 +64,7 @@ const HariTenang = () => {
                     />
 
                     <CardGaleri
-                        gambar="\hariTenang\harit-9.jpg"
+                        gambar="\hariTenang\harit-8.jpg"
                     />
 
                     <CardGaleri
