@@ -67,6 +67,14 @@ const HariTenang = () => {
                         gambar="\hariTenang\harit-9.jpg"
                     />
 
+<CardGaleri
+                        gambar="\hariTenang\harit-10.jpg"
+                    />
+
+<CardGaleri
+                        gambar="\hariTenang\harit-11.jpg"
+                    />
+
                     <CardYt
                         idVidio="yCPQDUr7VT8"
                         title="Pembersihan poster caleg pt1"
