@@ -1,4 +1,6 @@
 import FileDownloader from "../pdf/FileDownloader"
+// testing
+import FileDownloaderTes from "https://github.com/BayuKartawan/TPS7/blob/a71053eb32289262a2c573e2c235a2a7b9f85c5a/src/pages/pdf/FileDownloader.jsx"
 import TombolBack from "../../component/TombolBack"
 import Safe from 'react-safe'
 
@@ -31,6 +33,12 @@ const Bimtek1 = () => {
                         filePath="\assets\dok\SUBSTANSI-PENGATURAN-PEDOMAN-TEKNIS-PEMUNGUTAN-DAN-PENGHITUNGAN-SUARA.pdf"
                         fileName=""
                         buttonText="Substansi Pengaturan Pedoman Teknis Pemungutan Dan Penghitungan Suara"
+                    />
+
+                    <FileDownloaderTes
+                        filePath="\assets\dok\SUBSTANSI-PENGATURAN-PEDOMAN-TEKNIS-PEMUNGUTAN-DAN-PENGHITUNGAN-SUARA.pdf"
+                        fileName=""
+                        buttonText="Testing"
                     />
 
 
