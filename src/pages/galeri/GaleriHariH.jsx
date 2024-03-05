@@ -111,6 +111,22 @@ const GaleriHariH = () => {
                         gambar="\hariH\harih-20.jpg"
                     />
 
+                    <CardGaleri
+                        gambar="\hariH\harih-21.jpg"
+                    />
+
+                    <CardGaleri
+                        gambar="\hariH\harih-22.jpg"
+                    />
+
+                    <CardGaleri
+                        gambar="\hariH\harih-23.jpg"
+                    />
+
+                    <CardGaleri
+                        gambar="\hariH\harih-24.jpg"
+                    />
+
                     <CardYt
                         idVidio="toBo2lnY_to"
                         title="Jagain hansip lagi tidur"
